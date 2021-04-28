@@ -1,0 +1,367 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1937270072083139}
+  m_IsPrefabParent: 1
+--- !u!1 &1937270072083139
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4287347148701122}
+  - component: {fileID: 114804407322367976}
+  - component: {fileID: 114633572194279302}
+  m_Layer: 0
+  m_Name: SquidStickGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4287347148701122
+Transform:
+  m_GameObject: {fileID: 1937270072083139}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4108343001652431}
+  - {fileID: 4077626229200787}
+  - {fileID: 4765507527137829}
+  - {fileID: 4750614889438644}
+  - {fileID: 4827739325619591}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114804407322367976
+MonoBehaviour:
+  m_GameObject: {fileID: 1937270072083139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6e5f18ec13cee248add5e7317a1a339, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ItemPieces:
+  - {fileID: 1727433972485837}
+  - {fileID: 1495655623524408}
+  - {fileID: 1699874262537978}
+  - {fileID: 1145779949298747}
+  TotalPieces: 6
+--- !u!114 &114633572194279302
+MonoBehaviour:
+  m_GameObject: {fileID: 1937270072083139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c553f0769b74a66429283d30443b47ba, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  IKModifiers:
+  - BoneName: backbone_jnt
+    IdleZRot: -30
+    SwimMoveZRot: -45
+    DiveMoveZRot: -30
+  - BoneName: neck_jnt
+    IdleZRot: -10
+    SwimMoveZRot: -25
+    DiveMoveZRot: -25
+--- !u!1 &1234889532505162
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4108343001652431}
+  - component: {fileID: 33423296698072255}
+  - component: {fileID: 23562095629901712}
+  m_Layer: 0
+  m_Name: SquidStickTray
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4108343001652431
+Transform:
+  m_GameObject: {fileID: 1234889532505162}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4287347148701122}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33423296698072255
+MeshFilter:
+  m_GameObject: {fileID: 1234889532505162}
+  m_Mesh: {fileID: 4300000, guid: a1258681c67e2164d922f9d608a66511, type: 2}
+--- !u!23 &23562095629901712
+MeshRenderer:
+  m_GameObject: {fileID: 1234889532505162}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 24c8e65971466ba4c9d92b0f23433a71, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1727433972485837
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4077626229200787}
+  - component: {fileID: 33217910569649977}
+  - component: {fileID: 23280947461849046}
+  m_Layer: 0
+  m_Name: SquidStickA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4077626229200787
+Transform:
+  m_GameObject: {fileID: 1727433972485837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4287347148701122}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33217910569649977
+MeshFilter:
+  m_GameObject: {fileID: 1727433972485837}
+  m_Mesh: {fileID: 4300000, guid: 2786e3e0f04b2ee4fa48b23fb041d244, type: 2}
+--- !u!23 &23280947461849046
+MeshRenderer:
+  m_GameObject: {fileID: 1727433972485837}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 24c8e65971466ba4c9d92b0f23433a71, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1495655623524408
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4765507527137829}
+  - component: {fileID: 33066321644555359}
+  - component: {fileID: 23360410798803865}
+  m_Layer: 0
+  m_Name: SquidStickB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4765507527137829
+Transform:
+  m_GameObject: {fileID: 1495655623524408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4287347148701122}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33066321644555359
+MeshFilter:
+  m_GameObject: {fileID: 1495655623524408}
+  m_Mesh: {fileID: 4300000, guid: e668ec7c9bb90dc4d988b78e0d8f3c8f, type: 2}
+--- !u!23 &23360410798803865
+MeshRenderer:
+  m_GameObject: {fileID: 1495655623524408}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 24c8e65971466ba4c9d92b0f23433a71, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1699874262537978
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4750614889438644}
+  - component: {fileID: 33499530609505165}
+  - component: {fileID: 23002096549001323}
+  m_Layer: 0
+  m_Name: SquidStickC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4750614889438644
+Transform:
+  m_GameObject: {fileID: 1699874262537978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4287347148701122}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33499530609505165
+MeshFilter:
+  m_GameObject: {fileID: 1699874262537978}
+  m_Mesh: {fileID: 4300000, guid: 67342055205fd1b469e614f8004239fe, type: 2}
+--- !u!23 &23002096549001323
+MeshRenderer:
+  m_GameObject: {fileID: 1699874262537978}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 24c8e65971466ba4c9d92b0f23433a71, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1145779949298747
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4827739325619591}
+  - component: {fileID: 33955821897713490}
+  - component: {fileID: 23128795294705270}
+  m_Layer: 0
+  m_Name: SquidStickD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4827739325619591
+Transform:
+  m_GameObject: {fileID: 1145779949298747}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4287347148701122}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33955821897713490
+MeshFilter:
+  m_GameObject: {fileID: 1145779949298747}
+  m_Mesh: {fileID: 4300000, guid: 9bb8da0f84daf274fbd039dea63810e0, type: 2}
+--- !u!23 &23128795294705270
+MeshRenderer:
+  m_GameObject: {fileID: 1145779949298747}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 24c8e65971466ba4c9d92b0f23433a71, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

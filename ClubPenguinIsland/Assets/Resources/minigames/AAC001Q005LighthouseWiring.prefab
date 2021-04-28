@@ -1,0 +1,3479 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1769653132552805}
+  m_IsPrefabParent: 1
+--- !u!1 &1769653132552805
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224655450397379230}
+  - component: {fileID: 114001279229768220}
+  - component: {fileID: 114576817671618860}
+  - component: {fileID: 114782089219236521}
+  - component: {fileID: 114351400387493258}
+  m_Layer: 5
+  m_Name: AAC001Q005LighthouseWiring
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224655450397379230
+RectTransform:
+  m_GameObject: {fileID: 1769653132552805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -100}
+  m_LocalScale: {x: 3.4, y: 3.4, z: 1}
+  m_Children:
+  - {fileID: 224173673580522578}
+  - {fileID: 4155480572868134}
+  - {fileID: 4288395311448304}
+  - {fileID: 4426596143135132}
+  - {fileID: 4444257564543125}
+  - {fileID: 4306802373591901}
+  - {fileID: 4702229352219046}
+  - {fileID: 4086390309580385}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &114001279229768220
+MonoBehaviour:
+  m_GameObject: {fileID: 1769653132552805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ce81557241ca44e8ba52b3e8a0174c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CleanOnDisable: 0
+--- !u!114 &114576817671618860
+MonoBehaviour:
+  m_GameObject: {fileID: 1769653132552805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4371e83f8d5c0e243a2c705183b074cb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  SnapDistance: 0.25
+  snapAssistDuration: 0
+  MouseoverColor: {r: 1, g: 1, b: 1, a: 1}
+  ShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  IsMeshPuzzle: 1
+  minigameIntroEaseType: 4
+  minigameSolvedEaseType: 3
+  minigameTweenTime: 0.5
+  minigameDelay: 0
+  introOffset: {x: 0, y: -120, z: 0}
+  audioPuzzleSlideIn: SFX/UI/Item/WhooshIn
+  audioPuzzleSlideOut: SFX/UI/Item/WhooshOut
+  audioPuzzlePieceDrop: SFX/UI/Item/Drop
+  audioPuzzleSolved: MUS/Quest/AuntArctic/C001Q005
+  switchTo: RepairTransition1
+  switchGameObject: {fileID: 0}
+  easeType: 27
+  TweenTimeMin: 0.8
+  TweenTimeMax: 0.8
+  DelayMin: 0.4
+  DelayMax: 0.5
+  pieceEaseType: 3
+  PieceTweenTime: 0.25
+  PieceDelay: 0.5
+  ParticlesLockPiece: {fileID: 1001251852960271, guid: 89dc42ba7d78d604789800165ccd2e3e, type: 2}
+  PieceParticlePosition: {x: 0, y: 0, z: 1}
+  PieceParticleScale: {x: 0.5, y: 0.5, z: 0.5}
+  solveEaseType: 3
+  ArtworkTweenTime: 1
+  ArtworkSolveDelay: 0
+  ParticlesSolvePuzzle: {fileID: 1525017012541128, guid: d9d69a5ca5dae6a4ab5e5ef845ce4d12, type: 2}
+  ArtworkParticlePosition: {x: 0, y: 0.25, z: -1}
+  ArtworkParticleScale: {x: 1, y: 1, z: 1}
+  SuccessColor: {r: 1, g: 0.9960784, b: 0.7764706, a: 1}
+--- !u!114 &114782089219236521
+MonoBehaviour:
+  m_GameObject: {fileID: 1769653132552805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1272d1cb759865d4ab5df19a946a6682, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ModalColor: {r: 0.003921569, g: 0.04313726, b: 0.09019608, a: 1}
+  TileSprite: {fileID: 21300000, guid: 55bc09836fa8bec47af0498219b62e08, type: 3}
+  TileMaterial: {fileID: 0}
+--- !u!114 &114351400387493258
+MonoBehaviour:
+  m_GameObject: {fileID: 1769653132552805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544e23b1291d7bf4999c1173d3af503d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1264659287917515
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224173673580522578}
+  - component: {fileID: 222730839849503011}
+  - component: {fileID: 114164689633280004}
+  - component: {fileID: 114174766460424967}
+  - component: {fileID: 114123224369379635}
+  m_Layer: 5
+  m_Name: CloseBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224173673580522578
+RectTransform:
+  m_GameObject: {fileID: 1264659287917515}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 80, y: 150, z: 50}
+  m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
+  m_Children: []
+  m_Father: {fileID: 224655450397379230}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 80, y: 150}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222730839849503011
+CanvasRenderer:
+  m_GameObject: {fileID: 1264659287917515}
+--- !u!114 &114164689633280004
+MonoBehaviour:
+  m_GameObject: {fileID: 1264659287917515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 2100000, guid: c92716ecc6e17504193a7deeb163b14a, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 24041d89f693dd54ab4ae79e268b886a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114174766460424967
+MonoBehaviour:
+  m_GameObject: {fileID: 1264659287917515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 3
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.7843137, g: 0.7843137, b: 0.7843137, a: 1}
+    m_DisabledColor: {r: 0.7843137, g: 0.7843137, b: 0.7843137, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 114164689633280004}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114123224369379635
+MonoBehaviour:
+  m_GameObject: {fileID: 1264659287917515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd38bc210359634b8701e633bd9691f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1992515465502190
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4155480572868134}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4155480572868134
+Transform:
+  m_GameObject: {fileID: 1992515465502190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 60}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4115839159926909}
+  - {fileID: 4958048446035729}
+  m_Father: {fileID: 224655450397379230}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1154769869356320
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4115839159926909}
+  - component: {fileID: 33454885073850753}
+  - component: {fileID: 64528032928556133}
+  - component: {fileID: 23931859851723082}
+  m_Layer: 5
+  m_Name: Bkg artwork
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4115839159926909
+Transform:
+  m_GameObject: {fileID: 1154769869356320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 180, y: 320, z: 1}
+  m_Children:
+  - {fileID: 4103941611557854}
+  m_Father: {fileID: 4155480572868134}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33454885073850753
+MeshFilter:
+  m_GameObject: {fileID: 1154769869356320}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64528032928556133
+MeshCollider:
+  m_GameObject: {fileID: 1154769869356320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &23931859851723082
+MeshRenderer:
+  m_GameObject: {fileID: 1154769869356320}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: eb11533349815a64180f0794bcbc7f06, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1302669869912105
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4103941611557854}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4103941611557854
+Transform:
+  m_GameObject: {fileID: 1302669869912105}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.75, y: 0.412, z: 1}
+  m_Children:
+  - {fileID: 4599146246334837}
+  m_Father: {fileID: 4115839159926909}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!1 &1890308775364866
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4599146246334837}
+  - component: {fileID: 33712782054170448}
+  - component: {fileID: 23461705584333490}
+  m_Layer: 5
+  m_Name: wiresPuzzleBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4599146246334837
+Transform:
+  m_GameObject: {fileID: 1890308775364866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4103941611557854}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33712782054170448
+MeshFilter:
+  m_GameObject: {fileID: 1890308775364866}
+  m_Mesh: {fileID: 4300000, guid: e820552aff3224f4690893d46fca663d, type: 2}
+--- !u!23 &23461705584333490
+MeshRenderer:
+  m_GameObject: {fileID: 1890308775364866}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1992382608454208
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4958048446035729}
+  - component: {fileID: 33513367075172748}
+  - component: {fileID: 65896335153922013}
+  - component: {fileID: 23838459985524698}
+  m_Layer: 5
+  m_Name: Area Divider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4958048446035729
+Transform:
+  m_GameObject: {fileID: 1992382608454208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -53.3, z: -60}
+  m_LocalScale: {x: 200, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4155480572868134}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33513367075172748
+MeshFilter:
+  m_GameObject: {fileID: 1992382608454208}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65896335153922013
+BoxCollider:
+  m_GameObject: {fileID: 1992382608454208}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &23838459985524698
+MeshRenderer:
+  m_GameObject: {fileID: 1992382608454208}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: eb11533349815a64180f0794bcbc7f06, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1803735102034135
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4288395311448304}
+  m_Layer: 5
+  m_Name: Solve Positions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4288395311448304
+Transform:
+  m_GameObject: {fileID: 1803735102034135}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4175275266338978}
+  - {fileID: 4562184450866925}
+  - {fileID: 4043495760940598}
+  - {fileID: 4173391322374935}
+  - {fileID: 4832509837761156}
+  - {fileID: 4631190233962766}
+  - {fileID: 4600235185948971}
+  - {fileID: 4470100443010788}
+  - {fileID: 4518620716834270}
+  m_Father: {fileID: 224655450397379230}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1997861636688900
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4175275266338978}
+  - component: {fileID: 33022245218520451}
+  - component: {fileID: 23842318220791110}
+  - component: {fileID: 64993454495163026}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4175275266338978
+Transform:
+  m_GameObject: {fileID: 1997861636688900}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -44.00829, y: 112.2293, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4288395311448304}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33022245218520451
+MeshFilter:
+  m_GameObject: {fileID: 1997861636688900}
+  m_Mesh: {fileID: 4300000, guid: 148ccab01261b254586d8a91dd379850, type: 2}
+--- !u!23 &23842318220791110
+MeshRenderer:
+  m_GameObject: {fileID: 1997861636688900}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64993454495163026
+MeshCollider:
+  m_GameObject: {fileID: 1997861636688900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 148ccab01261b254586d8a91dd379850, type: 2}
+--- !u!1 &1026092288396823
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4562184450866925}
+  - component: {fileID: 33917283735166608}
+  - component: {fileID: 23468280940010669}
+  - component: {fileID: 64994992436058758}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4562184450866925
+Transform:
+  m_GameObject: {fileID: 1026092288396823}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.07706004, y: 112.2143, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4288395311448304}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33917283735166608
+MeshFilter:
+  m_GameObject: {fileID: 1026092288396823}
+  m_Mesh: {fileID: 4300000, guid: 2497640b51a8af14ea9186bca5ef278d, type: 2}
+--- !u!23 &23468280940010669
+MeshRenderer:
+  m_GameObject: {fileID: 1026092288396823}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64994992436058758
+MeshCollider:
+  m_GameObject: {fileID: 1026092288396823}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 2497640b51a8af14ea9186bca5ef278d, type: 2}
+--- !u!1 &1243800757965911
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4043495760940598}
+  - component: {fileID: 33827554302769951}
+  - component: {fileID: 23400440350225635}
+  - component: {fileID: 64687725091100094}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4043495760940598
+Transform:
+  m_GameObject: {fileID: 1243800757965911}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 43.70278, y: 112.1994, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4288395311448304}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33827554302769951
+MeshFilter:
+  m_GameObject: {fileID: 1243800757965911}
+  m_Mesh: {fileID: 4300000, guid: 37810b12e942d1e40923c4c07f202360, type: 2}
+--- !u!23 &23400440350225635
+MeshRenderer:
+  m_GameObject: {fileID: 1243800757965911}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64687725091100094
+MeshCollider:
+  m_GameObject: {fileID: 1243800757965911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 37810b12e942d1e40923c4c07f202360, type: 2}
+--- !u!1 &1744860302687113
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4173391322374935}
+  - component: {fileID: 33736852723954040}
+  - component: {fileID: 23217854079614291}
+  - component: {fileID: 64433478627145236}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4173391322374935
+Transform:
+  m_GameObject: {fileID: 1744860302687113}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -43.88307, y: 50.44028, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4288395311448304}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33736852723954040
+MeshFilter:
+  m_GameObject: {fileID: 1744860302687113}
+  m_Mesh: {fileID: 4300000, guid: 6471e1f040b99f54d9ae28cbb464d69f, type: 2}
+--- !u!23 &23217854079614291
+MeshRenderer:
+  m_GameObject: {fileID: 1744860302687113}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64433478627145236
+MeshCollider:
+  m_GameObject: {fileID: 1744860302687113}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 6471e1f040b99f54d9ae28cbb464d69f, type: 2}
+--- !u!1 &1361090779317959
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4832509837761156}
+  - component: {fileID: 33542009451758770}
+  - component: {fileID: 23075707275625122}
+  - component: {fileID: 64276124663626333}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4832509837761156
+Transform:
+  m_GameObject: {fileID: 1361090779317959}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.0396072, y: 50.46429, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4288395311448304}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33542009451758770
+MeshFilter:
+  m_GameObject: {fileID: 1361090779317959}
+  m_Mesh: {fileID: 4300000, guid: a5e63f8e1c7ff7a4b81f1da32c3ff642, type: 2}
+--- !u!23 &23075707275625122
+MeshRenderer:
+  m_GameObject: {fileID: 1361090779317959}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64276124663626333
+MeshCollider:
+  m_GameObject: {fileID: 1361090779317959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: a5e63f8e1c7ff7a4b81f1da32c3ff642, type: 2}
+--- !u!1 &1958057357911516
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4631190233962766}
+  - component: {fileID: 33556471781522310}
+  - component: {fileID: 23383022218875334}
+  - component: {fileID: 64832427328406072}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4631190233962766
+Transform:
+  m_GameObject: {fileID: 1958057357911516}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 43.63306, y: 50.48817, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4288395311448304}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33556471781522310
+MeshFilter:
+  m_GameObject: {fileID: 1958057357911516}
+  m_Mesh: {fileID: 4300000, guid: 43dd1e9a9ae1c084fb13a8c3511ed68a, type: 2}
+--- !u!23 &23383022218875334
+MeshRenderer:
+  m_GameObject: {fileID: 1958057357911516}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64832427328406072
+MeshCollider:
+  m_GameObject: {fileID: 1958057357911516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 43dd1e9a9ae1c084fb13a8c3511ed68a, type: 2}
+--- !u!1 &1663027507353103
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4600235185948971}
+  - component: {fileID: 33735136935969817}
+  - component: {fileID: 23053320955109636}
+  - component: {fileID: 64294715690970318}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4600235185948971
+Transform:
+  m_GameObject: {fileID: 1663027507353103}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -43.75807, y: -11.24479, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4288395311448304}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33735136935969817
+MeshFilter:
+  m_GameObject: {fileID: 1663027507353103}
+  m_Mesh: {fileID: 4300000, guid: 4026ecbaf4889cf44958745dc2427ddd, type: 2}
+--- !u!23 &23053320955109636
+MeshRenderer:
+  m_GameObject: {fileID: 1663027507353103}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64294715690970318
+MeshCollider:
+  m_GameObject: {fileID: 1663027507353103}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4026ecbaf4889cf44958745dc2427ddd, type: 2}
+--- !u!1 &1150294082057410
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4470100443010788}
+  - component: {fileID: 33227656321686285}
+  - component: {fileID: 23933933218797144}
+  - component: {fileID: 64290419012909763}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4470100443010788
+Transform:
+  m_GameObject: {fileID: 1150294082057410}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.002022047, y: -11.24415, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4288395311448304}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33227656321686285
+MeshFilter:
+  m_GameObject: {fileID: 1150294082057410}
+  m_Mesh: {fileID: 4300000, guid: d53d3e6bd574e0f46b71a47f3b57a2b5, type: 2}
+--- !u!23 &23933933218797144
+MeshRenderer:
+  m_GameObject: {fileID: 1150294082057410}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64290419012909763
+MeshCollider:
+  m_GameObject: {fileID: 1150294082057410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: d53d3e6bd574e0f46b71a47f3b57a2b5, type: 2}
+--- !u!1 &1947392765209994
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4518620716834270}
+  - component: {fileID: 33496305497050272}
+  - component: {fileID: 23257525837576029}
+  - component: {fileID: 64471204333599206}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4518620716834270
+Transform:
+  m_GameObject: {fileID: 1947392765209994}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 43.56314, y: -11.24353, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4288395311448304}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33496305497050272
+MeshFilter:
+  m_GameObject: {fileID: 1947392765209994}
+  m_Mesh: {fileID: 4300000, guid: 4a4782a2074be2546b8f3d1072ff9479, type: 2}
+--- !u!23 &23257525837576029
+MeshRenderer:
+  m_GameObject: {fileID: 1947392765209994}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64471204333599206
+MeshCollider:
+  m_GameObject: {fileID: 1947392765209994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4a4782a2074be2546b8f3d1072ff9479, type: 2}
+--- !u!1 &1927832411408262
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4426596143135132}
+  m_Layer: 5
+  m_Name: Start Positions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4426596143135132
+Transform:
+  m_GameObject: {fileID: 1927832411408262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_Children:
+  - {fileID: 4443555046527167}
+  - {fileID: 4640998655798068}
+  - {fileID: 4985702886168040}
+  - {fileID: 4053419284823547}
+  - {fileID: 4914452971978096}
+  - {fileID: 4523928400392714}
+  - {fileID: 4254314575518095}
+  - {fileID: 4227324166843538}
+  - {fileID: 4083930558007296}
+  m_Father: {fileID: 224655450397379230}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1166716758239900
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4443555046527167}
+  - component: {fileID: 33245448976507320}
+  - component: {fileID: 23736018173791094}
+  - component: {fileID: 64071347134655665}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4443555046527167
+Transform:
+  m_GameObject: {fileID: 1166716758239900}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 48.5, y: -185, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4426596143135132}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33245448976507320
+MeshFilter:
+  m_GameObject: {fileID: 1166716758239900}
+  m_Mesh: {fileID: 4300000, guid: 148ccab01261b254586d8a91dd379850, type: 2}
+--- !u!23 &23736018173791094
+MeshRenderer:
+  m_GameObject: {fileID: 1166716758239900}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64071347134655665
+MeshCollider:
+  m_GameObject: {fileID: 1166716758239900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 148ccab01261b254586d8a91dd379850, type: 2}
+--- !u!1 &1060106112599488
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4640998655798068}
+  - component: {fileID: 33944450966545549}
+  - component: {fileID: 23890397952574610}
+  - component: {fileID: 64351295420385078}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4640998655798068
+Transform:
+  m_GameObject: {fileID: 1060106112599488}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -28.9, y: -118, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4426596143135132}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33944450966545549
+MeshFilter:
+  m_GameObject: {fileID: 1060106112599488}
+  m_Mesh: {fileID: 4300000, guid: 2497640b51a8af14ea9186bca5ef278d, type: 2}
+--- !u!23 &23890397952574610
+MeshRenderer:
+  m_GameObject: {fileID: 1060106112599488}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64351295420385078
+MeshCollider:
+  m_GameObject: {fileID: 1060106112599488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 2497640b51a8af14ea9186bca5ef278d, type: 2}
+--- !u!1 &1381413883931921
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4985702886168040}
+  - component: {fileID: 33496298002544251}
+  - component: {fileID: 23850008061286516}
+  - component: {fileID: 64336780640760186}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4985702886168040
+Transform:
+  m_GameObject: {fileID: 1381413883931921}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -98.7, y: -185, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4426596143135132}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33496298002544251
+MeshFilter:
+  m_GameObject: {fileID: 1381413883931921}
+  m_Mesh: {fileID: 4300000, guid: 37810b12e942d1e40923c4c07f202360, type: 2}
+--- !u!23 &23850008061286516
+MeshRenderer:
+  m_GameObject: {fileID: 1381413883931921}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64336780640760186
+MeshCollider:
+  m_GameObject: {fileID: 1381413883931921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 37810b12e942d1e40923c4c07f202360, type: 2}
+--- !u!1 &1345162879435968
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4053419284823547}
+  - component: {fileID: 33119643207657916}
+  - component: {fileID: 23361157955536035}
+  - component: {fileID: 64496742863974774}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4053419284823547
+Transform:
+  m_GameObject: {fileID: 1345162879435968}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: -185, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4426596143135132}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33119643207657916
+MeshFilter:
+  m_GameObject: {fileID: 1345162879435968}
+  m_Mesh: {fileID: 4300000, guid: 6471e1f040b99f54d9ae28cbb464d69f, type: 2}
+--- !u!23 &23361157955536035
+MeshRenderer:
+  m_GameObject: {fileID: 1345162879435968}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64496742863974774
+MeshCollider:
+  m_GameObject: {fileID: 1345162879435968}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 6471e1f040b99f54d9ae28cbb464d69f, type: 2}
+--- !u!1 &1825490102751336
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4914452971978096}
+  - component: {fileID: 33875510956215877}
+  - component: {fileID: 23722442761246281}
+  - component: {fileID: 64365901248974395}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4914452971978096
+Transform:
+  m_GameObject: {fileID: 1825490102751336}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -84.1, y: -118, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4426596143135132}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33875510956215877
+MeshFilter:
+  m_GameObject: {fileID: 1825490102751336}
+  m_Mesh: {fileID: 4300000, guid: a5e63f8e1c7ff7a4b81f1da32c3ff642, type: 2}
+--- !u!23 &23722442761246281
+MeshRenderer:
+  m_GameObject: {fileID: 1825490102751336}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64365901248974395
+MeshCollider:
+  m_GameObject: {fileID: 1825490102751336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: a5e63f8e1c7ff7a4b81f1da32c3ff642, type: 2}
+--- !u!1 &1352199079581622
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4523928400392714}
+  - component: {fileID: 33302320211182515}
+  - component: {fileID: 23854318893367726}
+  - component: {fileID: 64684056300813348}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4523928400392714
+Transform:
+  m_GameObject: {fileID: 1352199079581622}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 84.5, y: -118, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4426596143135132}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33302320211182515
+MeshFilter:
+  m_GameObject: {fileID: 1352199079581622}
+  m_Mesh: {fileID: 4300000, guid: 43dd1e9a9ae1c084fb13a8c3511ed68a, type: 2}
+--- !u!23 &23854318893367726
+MeshRenderer:
+  m_GameObject: {fileID: 1352199079581622}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64684056300813348
+MeshCollider:
+  m_GameObject: {fileID: 1352199079581622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 43dd1e9a9ae1c084fb13a8c3511ed68a, type: 2}
+--- !u!1 &1093146625196778
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4254314575518095}
+  - component: {fileID: 33784379128500968}
+  - component: {fileID: 23445097137084215}
+  - component: {fileID: 64796005133675495}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4254314575518095
+Transform:
+  m_GameObject: {fileID: 1093146625196778}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 97.9, y: -185, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4426596143135132}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33784379128500968
+MeshFilter:
+  m_GameObject: {fileID: 1093146625196778}
+  m_Mesh: {fileID: 4300000, guid: 4026ecbaf4889cf44958745dc2427ddd, type: 2}
+--- !u!23 &23445097137084215
+MeshRenderer:
+  m_GameObject: {fileID: 1093146625196778}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64796005133675495
+MeshCollider:
+  m_GameObject: {fileID: 1093146625196778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4026ecbaf4889cf44958745dc2427ddd, type: 2}
+--- !u!1 &1065659652645361
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4227324166843538}
+  - component: {fileID: 33737655807950116}
+  - component: {fileID: 23648293116638625}
+  - component: {fileID: 64616783291682398}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4227324166843538
+Transform:
+  m_GameObject: {fileID: 1065659652645361}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 28.3, y: -118, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4426596143135132}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33737655807950116
+MeshFilter:
+  m_GameObject: {fileID: 1065659652645361}
+  m_Mesh: {fileID: 4300000, guid: d53d3e6bd574e0f46b71a47f3b57a2b5, type: 2}
+--- !u!23 &23648293116638625
+MeshRenderer:
+  m_GameObject: {fileID: 1065659652645361}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64616783291682398
+MeshCollider:
+  m_GameObject: {fileID: 1065659652645361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: d53d3e6bd574e0f46b71a47f3b57a2b5, type: 2}
+--- !u!1 &1147733384188917
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4083930558007296}
+  - component: {fileID: 33203544616367089}
+  - component: {fileID: 23996401912904378}
+  - component: {fileID: 64909848074234197}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4083930558007296
+Transform:
+  m_GameObject: {fileID: 1147733384188917}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -48.7, y: -185, z: 0}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4426596143135132}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33203544616367089
+MeshFilter:
+  m_GameObject: {fileID: 1147733384188917}
+  m_Mesh: {fileID: 4300000, guid: 4a4782a2074be2546b8f3d1072ff9479, type: 2}
+--- !u!23 &23996401912904378
+MeshRenderer:
+  m_GameObject: {fileID: 1147733384188917}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64909848074234197
+MeshCollider:
+  m_GameObject: {fileID: 1147733384188917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4a4782a2074be2546b8f3d1072ff9479, type: 2}
+--- !u!1 &1931049161074633
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4444257564543125}
+  m_Layer: 5
+  m_Name: Completed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4444257564543125
+Transform:
+  m_GameObject: {fileID: 1931049161074633}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 40}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4109427429296487}
+  m_Father: {fileID: 224655450397379230}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1379251250893368
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4109427429296487}
+  m_Layer: 5
+  m_Name: Completed Artwork
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4109427429296487
+Transform:
+  m_GameObject: {fileID: 1379251250893368}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4334894983295764}
+  - {fileID: 4155898185111925}
+  - {fileID: 4862317104528413}
+  - {fileID: 4363203065619590}
+  - {fileID: 4603438555636022}
+  - {fileID: 4278682727050374}
+  - {fileID: 4185204121425264}
+  - {fileID: 4764634580653342}
+  - {fileID: 4143655649128764}
+  m_Father: {fileID: 4444257564543125}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1028092188606244
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4334894983295764}
+  - component: {fileID: 33046396807333333}
+  - component: {fileID: 23869198994515518}
+  - component: {fileID: 64502179865922994}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4334894983295764
+Transform:
+  m_GameObject: {fileID: 1028092188606244}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -44.00829, y: 112.2292, z: 10}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4109427429296487}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33046396807333333
+MeshFilter:
+  m_GameObject: {fileID: 1028092188606244}
+  m_Mesh: {fileID: 4300000, guid: 148ccab01261b254586d8a91dd379850, type: 2}
+--- !u!23 &23869198994515518
+MeshRenderer:
+  m_GameObject: {fileID: 1028092188606244}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64502179865922994
+MeshCollider:
+  m_GameObject: {fileID: 1028092188606244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 148ccab01261b254586d8a91dd379850, type: 2}
+--- !u!1 &1962558655644041
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4155898185111925}
+  - component: {fileID: 33010539688100542}
+  - component: {fileID: 23692243509047803}
+  - component: {fileID: 64349324422896134}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4155898185111925
+Transform:
+  m_GameObject: {fileID: 1962558655644041}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.07706003, y: 112.2143, z: 10}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4109427429296487}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33010539688100542
+MeshFilter:
+  m_GameObject: {fileID: 1962558655644041}
+  m_Mesh: {fileID: 4300000, guid: 2497640b51a8af14ea9186bca5ef278d, type: 2}
+--- !u!23 &23692243509047803
+MeshRenderer:
+  m_GameObject: {fileID: 1962558655644041}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64349324422896134
+MeshCollider:
+  m_GameObject: {fileID: 1962558655644041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 2497640b51a8af14ea9186bca5ef278d, type: 2}
+--- !u!1 &1923170010280339
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4862317104528413}
+  - component: {fileID: 33882251170264690}
+  - component: {fileID: 23237623792331943}
+  - component: {fileID: 64902650175728751}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4862317104528413
+Transform:
+  m_GameObject: {fileID: 1923170010280339}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 43.70277, y: 112.1994, z: 10}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4109427429296487}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33882251170264690
+MeshFilter:
+  m_GameObject: {fileID: 1923170010280339}
+  m_Mesh: {fileID: 4300000, guid: 37810b12e942d1e40923c4c07f202360, type: 2}
+--- !u!23 &23237623792331943
+MeshRenderer:
+  m_GameObject: {fileID: 1923170010280339}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64902650175728751
+MeshCollider:
+  m_GameObject: {fileID: 1923170010280339}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 37810b12e942d1e40923c4c07f202360, type: 2}
+--- !u!1 &1214963023179196
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4363203065619590}
+  - component: {fileID: 33589010537431957}
+  - component: {fileID: 23138202572950609}
+  - component: {fileID: 64285473921533942}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4363203065619590
+Transform:
+  m_GameObject: {fileID: 1214963023179196}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -43.88307, y: 50.44027, z: 10}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4109427429296487}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33589010537431957
+MeshFilter:
+  m_GameObject: {fileID: 1214963023179196}
+  m_Mesh: {fileID: 4300000, guid: 6471e1f040b99f54d9ae28cbb464d69f, type: 2}
+--- !u!23 &23138202572950609
+MeshRenderer:
+  m_GameObject: {fileID: 1214963023179196}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64285473921533942
+MeshCollider:
+  m_GameObject: {fileID: 1214963023179196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 6471e1f040b99f54d9ae28cbb464d69f, type: 2}
+--- !u!1 &1938210478800765
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4603438555636022}
+  - component: {fileID: 33675503855065709}
+  - component: {fileID: 23753791356935086}
+  - component: {fileID: 64515587285313358}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4603438555636022
+Transform:
+  m_GameObject: {fileID: 1938210478800765}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.0396072, y: 50.46428, z: 10}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4109427429296487}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33675503855065709
+MeshFilter:
+  m_GameObject: {fileID: 1938210478800765}
+  m_Mesh: {fileID: 4300000, guid: a5e63f8e1c7ff7a4b81f1da32c3ff642, type: 2}
+--- !u!23 &23753791356935086
+MeshRenderer:
+  m_GameObject: {fileID: 1938210478800765}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64515587285313358
+MeshCollider:
+  m_GameObject: {fileID: 1938210478800765}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: a5e63f8e1c7ff7a4b81f1da32c3ff642, type: 2}
+--- !u!1 &1512098207481597
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4278682727050374}
+  - component: {fileID: 33425776448204020}
+  - component: {fileID: 23873611181636507}
+  - component: {fileID: 64379429183535304}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4278682727050374
+Transform:
+  m_GameObject: {fileID: 1512098207481597}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 43.63306, y: 50.48816, z: 10}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4109427429296487}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33425776448204020
+MeshFilter:
+  m_GameObject: {fileID: 1512098207481597}
+  m_Mesh: {fileID: 4300000, guid: 43dd1e9a9ae1c084fb13a8c3511ed68a, type: 2}
+--- !u!23 &23873611181636507
+MeshRenderer:
+  m_GameObject: {fileID: 1512098207481597}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64379429183535304
+MeshCollider:
+  m_GameObject: {fileID: 1512098207481597}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 43dd1e9a9ae1c084fb13a8c3511ed68a, type: 2}
+--- !u!1 &1664786245173182
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4185204121425264}
+  - component: {fileID: 33713403903491757}
+  - component: {fileID: 23779660250504878}
+  - component: {fileID: 64080033264499360}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4185204121425264
+Transform:
+  m_GameObject: {fileID: 1664786245173182}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -43.75807, y: -11.24479, z: 10}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4109427429296487}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33713403903491757
+MeshFilter:
+  m_GameObject: {fileID: 1664786245173182}
+  m_Mesh: {fileID: 4300000, guid: 4026ecbaf4889cf44958745dc2427ddd, type: 2}
+--- !u!23 &23779660250504878
+MeshRenderer:
+  m_GameObject: {fileID: 1664786245173182}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64080033264499360
+MeshCollider:
+  m_GameObject: {fileID: 1664786245173182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4026ecbaf4889cf44958745dc2427ddd, type: 2}
+--- !u!1 &1928265103661066
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4764634580653342}
+  - component: {fileID: 33736913598701045}
+  - component: {fileID: 23706850837370810}
+  - component: {fileID: 64982806600990029}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4764634580653342
+Transform:
+  m_GameObject: {fileID: 1928265103661066}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.002022047, y: -11.24415, z: 10}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4109427429296487}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33736913598701045
+MeshFilter:
+  m_GameObject: {fileID: 1928265103661066}
+  m_Mesh: {fileID: 4300000, guid: d53d3e6bd574e0f46b71a47f3b57a2b5, type: 2}
+--- !u!23 &23706850837370810
+MeshRenderer:
+  m_GameObject: {fileID: 1928265103661066}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64982806600990029
+MeshCollider:
+  m_GameObject: {fileID: 1928265103661066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: d53d3e6bd574e0f46b71a47f3b57a2b5, type: 2}
+--- !u!1 &1672549031528118
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4143655649128764}
+  - component: {fileID: 33408462448704425}
+  - component: {fileID: 23265039362007673}
+  - component: {fileID: 64621563161023175}
+  m_Layer: 5
+  m_Name: wiresPuzzlePieceI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4143655649128764
+Transform:
+  m_GameObject: {fileID: 1672549031528118}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 43.56314, y: -11.24352, z: 10}
+  m_LocalScale: {x: 134.7059, y: 132.0588, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4109427429296487}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!33 &33408462448704425
+MeshFilter:
+  m_GameObject: {fileID: 1672549031528118}
+  m_Mesh: {fileID: 4300000, guid: 4a4782a2074be2546b8f3d1072ff9479, type: 2}
+--- !u!23 &23265039362007673
+MeshRenderer:
+  m_GameObject: {fileID: 1672549031528118}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 37c456b5abed79e40a8e1feb10da1318, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64621563161023175
+MeshCollider:
+  m_GameObject: {fileID: 1672549031528118}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4a4782a2074be2546b8f3d1072ff9479, type: 2}
+--- !u!1 &1125081101656302
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4306802373591901}
+  m_Layer: 5
+  m_Name: Foreground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4306802373591901
+Transform:
+  m_GameObject: {fileID: 1125081101656302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4058676090929868}
+  m_Father: {fileID: 224655450397379230}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1523972129050009
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4058676090929868}
+  m_Layer: 5
+  m_Name: Fg artwork
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4058676090929868
+Transform:
+  m_GameObject: {fileID: 1523972129050009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 180, y: 320, z: 1}
+  m_Children:
+  - {fileID: 4798485037829543}
+  m_Father: {fileID: 4306802373591901}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1690240802514564
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4798485037829543}
+  m_Layer: 5
+  m_Name: Pegs (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4798485037829543
+Transform:
+  m_GameObject: {fileID: 1690240802514564}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: -0.294, z: 0}
+  m_LocalScale: {x: 0.4084967, y: 0.2297794, z: 1}
+  m_Children:
+  - {fileID: 4353876520881241}
+  - {fileID: 4417806856525532}
+  - {fileID: 4944869980632591}
+  - {fileID: 4064632152887548}
+  - {fileID: 4462153954119205}
+  - {fileID: 4329204950136949}
+  - {fileID: 4558981393232362}
+  - {fileID: 4598578540556159}
+  - {fileID: 4000069702220020}
+  - {fileID: 4167786694153702}
+  - {fileID: 4370281798074277}
+  - {fileID: 4380847209521391}
+  m_Father: {fileID: 4058676090929868}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!1 &1391512341387766
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4353876520881241}
+  - component: {fileID: 33453012321921191}
+  - component: {fileID: 23476828839201626}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4353876520881241
+Transform:
+  m_GameObject: {fileID: 1391512341387766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8058987, y: 2.923063, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33453012321921191
+MeshFilter:
+  m_GameObject: {fileID: 1391512341387766}
+  m_Mesh: {fileID: 4300000, guid: 91b117d129fdcd54c8b0329eb785a724, type: 2}
+--- !u!23 &23476828839201626
+MeshRenderer:
+  m_GameObject: {fileID: 1391512341387766}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1404137944550726
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4417806856525532}
+  - component: {fileID: 33478464681764659}
+  - component: {fileID: 23831855843006502}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4417806856525532
+Transform:
+  m_GameObject: {fileID: 1404137944550726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6707914, y: 2.611586, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33478464681764659
+MeshFilter:
+  m_GameObject: {fileID: 1404137944550726}
+  m_Mesh: {fileID: 4300000, guid: 15cf3ba12431c16468946137ab4873d5, type: 2}
+--- !u!23 &23831855843006502
+MeshRenderer:
+  m_GameObject: {fileID: 1404137944550726}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1628906351539077
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4944869980632591}
+  - component: {fileID: 33266177679927346}
+  - component: {fileID: 23588213970631124}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4944869980632591
+Transform:
+  m_GameObject: {fileID: 1628906351539077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2682083, y: 2.388082, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33266177679927346
+MeshFilter:
+  m_GameObject: {fileID: 1628906351539077}
+  m_Mesh: {fileID: 4300000, guid: c03af932850edb243beae81d7b9ef82a, type: 2}
+--- !u!23 &23588213970631124
+MeshRenderer:
+  m_GameObject: {fileID: 1628906351539077}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1734040894198569
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4064632152887548}
+  - component: {fileID: 33053579668115351}
+  - component: {fileID: 23482761496058272}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4064632152887548
+Transform:
+  m_GameObject: {fileID: 1734040894198569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07422297, y: 2.793633, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33053579668115351
+MeshFilter:
+  m_GameObject: {fileID: 1734040894198569}
+  m_Mesh: {fileID: 4300000, guid: e001d9657ab26414383c5f725da6aee2, type: 2}
+--- !u!23 &23482761496058272
+MeshRenderer:
+  m_GameObject: {fileID: 1734040894198569}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1566961758294089
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4462153954119205}
+  - component: {fileID: 33328107956591918}
+  - component: {fileID: 23310522976388166}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4462153954119205
+Transform:
+  m_GameObject: {fileID: 1566961758294089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1629421, y: 2.505771, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33328107956591918
+MeshFilter:
+  m_GameObject: {fileID: 1566961758294089}
+  m_Mesh: {fileID: 4300000, guid: 4ea02022dcafeb54e90a6b462221de7f, type: 2}
+--- !u!23 &23310522976388166
+MeshRenderer:
+  m_GameObject: {fileID: 1566961758294089}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1909893010833307
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4329204950136949}
+  - component: {fileID: 33909522852735543}
+  - component: {fileID: 23336211223237260}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4329204950136949
+Transform:
+  m_GameObject: {fileID: 1909893010833307}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7359774, y: 2.872802, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33909522852735543
+MeshFilter:
+  m_GameObject: {fileID: 1909893010833307}
+  m_Mesh: {fileID: 4300000, guid: 253292fe6d1215d4da637317b1ec34e9, type: 2}
+--- !u!23 &23336211223237260
+MeshRenderer:
+  m_GameObject: {fileID: 1909893010833307}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1447935968438934
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4558981393232362}
+  - component: {fileID: 33016362005877950}
+  - component: {fileID: 23657850657556232}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4558981393232362
+Transform:
+  m_GameObject: {fileID: 1447935968438934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6641155, y: 1.8603, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33016362005877950
+MeshFilter:
+  m_GameObject: {fileID: 1447935968438934}
+  m_Mesh: {fileID: 4300000, guid: 8246d8db81767ee4b81d9ba568054da8, type: 2}
+--- !u!23 &23657850657556232
+MeshRenderer:
+  m_GameObject: {fileID: 1447935968438934}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1723395587439499
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4598578540556159}
+  - component: {fileID: 33994130224219002}
+  - component: {fileID: 23659186464747075}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4598578540556159
+Transform:
+  m_GameObject: {fileID: 1723395587439499}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1470331, y: 1.926878, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33994130224219002
+MeshFilter:
+  m_GameObject: {fileID: 1723395587439499}
+  m_Mesh: {fileID: 4300000, guid: 0a5e20a9ecf98144ab7914cc058330ad, type: 2}
+--- !u!23 &23659186464747075
+MeshRenderer:
+  m_GameObject: {fileID: 1723395587439499}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1015416395158533
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000069702220020}
+  - component: {fileID: 33179208840970840}
+  - component: {fileID: 23821377448960688}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4000069702220020
+Transform:
+  m_GameObject: {fileID: 1015416395158533}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1991495, y: 1.695346, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33179208840970840
+MeshFilter:
+  m_GameObject: {fileID: 1015416395158533}
+  m_Mesh: {fileID: 4300000, guid: ed47166507c1b97478a40cfea649945a, type: 2}
+--- !u!23 &23821377448960688
+MeshRenderer:
+  m_GameObject: {fileID: 1015416395158533}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1082417108967110
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4167786694153702}
+  - component: {fileID: 33757415594892986}
+  - component: {fileID: 23276815555944579}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelJ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4167786694153702
+Transform:
+  m_GameObject: {fileID: 1082417108967110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5457797, y: 2.115062, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33757415594892986
+MeshFilter:
+  m_GameObject: {fileID: 1082417108967110}
+  m_Mesh: {fileID: 4300000, guid: fac29d10f8317794f935c4a3182d6d2f, type: 2}
+--- !u!23 &23276815555944579
+MeshRenderer:
+  m_GameObject: {fileID: 1082417108967110}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1005437711591706
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4370281798074277}
+  - component: {fileID: 33062426364304062}
+  - component: {fileID: 23189849964061808}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4370281798074277
+Transform:
+  m_GameObject: {fileID: 1005437711591706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3495269, y: 1.423198, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33062426364304062
+MeshFilter:
+  m_GameObject: {fileID: 1005437711591706}
+  m_Mesh: {fileID: 4300000, guid: 226800afb17e69d4381c873629b4aaa3, type: 2}
+--- !u!23 &23189849964061808
+MeshRenderer:
+  m_GameObject: {fileID: 1005437711591706}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1895189282908899
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4380847209521391}
+  - component: {fileID: 33450733338178857}
+  - component: {fileID: 23637989112499757}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4380847209521391
+Transform:
+  m_GameObject: {fileID: 1895189282908899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.6249932, y: 1.258797, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4798485037829543}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33450733338178857
+MeshFilter:
+  m_GameObject: {fileID: 1895189282908899}
+  m_Mesh: {fileID: 4300000, guid: 2a65fa559571e3042a56d38ccd551c7c, type: 2}
+--- !u!23 &23637989112499757
+MeshRenderer:
+  m_GameObject: {fileID: 1895189282908899}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1126688321215491
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4702229352219046}
+  m_Layer: 5
+  m_Name: IntroAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4702229352219046
+Transform:
+  m_GameObject: {fileID: 1126688321215491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4273755978992302}
+  m_Father: {fileID: 224655450397379230}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1409123447175856
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4273755978992302}
+  - component: {fileID: 33328183693612446}
+  - component: {fileID: 64914020300074251}
+  - component: {fileID: 23525687450383683}
+  m_Layer: 5
+  m_Name: Animation Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4273755978992302
+Transform:
+  m_GameObject: {fileID: 1409123447175856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4702229352219046}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33328183693612446
+MeshFilter:
+  m_GameObject: {fileID: 1409123447175856}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64914020300074251
+MeshCollider:
+  m_GameObject: {fileID: 1409123447175856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &23525687450383683
+MeshRenderer:
+  m_GameObject: {fileID: 1409123447175856}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 62dab8263f5bb3148bd29e2ca182646f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1561456879665298
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4086390309580385}
+  m_Layer: 5
+  m_Name: SolvedAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4086390309580385
+Transform:
+  m_GameObject: {fileID: 1561456879665298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4789228621463867}
+  m_Father: {fileID: 224655450397379230}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1210373442826485
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4789228621463867}
+  - component: {fileID: 33396989963526239}
+  - component: {fileID: 64488694688917681}
+  - component: {fileID: 23903687654071682}
+  m_Layer: 5
+  m_Name: Animation Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4789228621463867
+Transform:
+  m_GameObject: {fileID: 1210373442826485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4086390309580385}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33396989963526239
+MeshFilter:
+  m_GameObject: {fileID: 1210373442826485}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64488694688917681
+MeshCollider:
+  m_GameObject: {fileID: 1210373442826485}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &23903687654071682
+MeshRenderer:
+  m_GameObject: {fileID: 1210373442826485}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1356364ef6b8d2b44afafd5e47817ae0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

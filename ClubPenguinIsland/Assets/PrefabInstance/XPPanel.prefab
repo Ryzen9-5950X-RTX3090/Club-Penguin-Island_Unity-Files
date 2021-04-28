@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1263450245136439}
+  m_IsPrefabParent: 1
+--- !u!1 &1263450245136439
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224894137826183788}
+  - component: {fileID: 222608782527860438}
+  - component: {fileID: 114777502134874796}
+  - component: {fileID: 114705628574871756}
+  m_Layer: 5
+  m_Name: XPPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224894137826183788
+RectTransform:
+  m_GameObject: {fileID: 1263450245136439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222608782527860438
+CanvasRenderer:
+  m_GameObject: {fileID: 1263450245136439}
+--- !u!114 &114777502134874796
+MonoBehaviour:
+  m_GameObject: {fileID: 1263450245136439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a09c2a10b4f6724a8aca26527643134, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  XpHudParentTransform: {fileID: 224894137826183788}
+  XPLayoutElement: {fileID: 114705628574871756}
+  HIDE_DELAY_TIME: 1
+--- !u!114 &114705628574871756
+MonoBehaviour:
+  m_GameObject: {fileID: 1263450245136439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 130
+  m_PreferredHeight: 137
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1

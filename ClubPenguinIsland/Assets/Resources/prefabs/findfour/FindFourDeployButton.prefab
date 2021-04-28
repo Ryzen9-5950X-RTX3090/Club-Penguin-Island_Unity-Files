@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1723991255794124}
+  m_IsPrefabParent: 1
+--- !u!1 &1723991255794124
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224846588568182465}
+  - component: {fileID: 222992897599192435}
+  - component: {fileID: 114890925149114795}
+  - component: {fileID: 114714515919415025}
+  - component: {fileID: 114475866865068529}
+  - component: {fileID: 114528519745103955}
+  m_Layer: 5
+  m_Name: FindFourDeployButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224846588568182465
+RectTransform:
+  m_GameObject: {fileID: 1723991255794124}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222992897599192435
+CanvasRenderer:
+  m_GameObject: {fileID: 1723991255794124}
+--- !u!114 &114890925149114795
+MonoBehaviour:
+  m_GameObject: {fileID: 1723991255794124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce0506b5fd092674dae1c371c7b4f9f5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Action: 1
+--- !u!114 &114714515919415025
+MonoBehaviour:
+  m_GameObject: {fileID: 1723991255794124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b1108083d95c748a67295ad1077abb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114475866865068529
+MonoBehaviour:
+  m_GameObject: {fileID: 1723991255794124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2552ed8a9f880c429b6d45708067063, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  MemberLockContentKey:
+    Key: ControlsPrefabs/Buttons/MemberLockedButton
+    type: UnityEngine.GameObject, UnityEngine
+  IconSprite: {fileID: 21300032, guid: 372e203dcca00ec4798b8f184ad4d408, type: 3}
+  isLocked: 0
+--- !u!114 &114528519745103955
+MonoBehaviour:
+  m_GameObject: {fileID: 1723991255794124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2836f900d63f6449a445527e2b22594, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  TooltipPrefab:
+    Key: Prefabs/Common/PartyGamesCantPlaceTooltip
+    type: UnityEngine.GameObject, UnityEngine
+  TooltipOffset: {x: 0, y: 65}

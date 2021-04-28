@@ -1,0 +1,1386 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1820614105834268}
+  m_IsPrefabParent: 1
+--- !u!1 &1820614105834268
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224545723779215296}
+  - component: {fileID: 222022098541998099}
+  - component: {fileID: 114581025672854433}
+  - component: {fileID: 114796429499814444}
+  m_Layer: 5
+  m_Name: ActiveQuest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224545723779215296
+RectTransform:
+  m_GameObject: {fileID: 1820614105834268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224276333234560365}
+  - {fileID: 224605990199811342}
+  - {fileID: 224401909832957668}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222022098541998099
+CanvasRenderer:
+  m_GameObject: {fileID: 1820614105834268}
+--- !u!114 &114581025672854433
+MonoBehaviour:
+  m_GameObject: {fileID: 1820614105834268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 700
+  m_PreferredHeight: 350
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &114796429499814444
+MonoBehaviour:
+  m_GameObject: {fileID: 1820614105834268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9585f7d963daedf49b1f8f8de5ec6f06, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1966987059404799
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224276333234560365}
+  - component: {fileID: 114025958241666373}
+  - component: {fileID: 95655990250019795}
+  m_Layer: 5
+  m_Name: AdventureState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224276333234560365
+RectTransform:
+  m_GameObject: {fileID: 1966987059404799}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: -28, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224992986792138108}
+  - {fileID: 224151154900276470}
+  - {fileID: 224249326314277837}
+  - {fileID: 224841820824626471}
+  m_Father: {fileID: 224545723779215296}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -5, y: -28}
+  m_SizeDelta: {x: -32, y: -55.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &114025958241666373
+MonoBehaviour:
+  m_GameObject: {fileID: 1966987059404799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2093dd3e65afd374587ea27dc216d289, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HeaderText: {fileID: 114017418169160101}
+  QuestTitleText: {fileID: 114636197555336754}
+  QuestStepText: {fileID: 114271649557488179}
+--- !u!95 &95655990250019795
+Animator:
+  serializedVersion: 3
+  m_GameObject: {fileID: 1966987059404799}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 231fb96ec5a7bbf47aac81b97a553739, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage:
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &1499958918439371
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224992986792138108}
+  - component: {fileID: 222374537668762439}
+  - component: {fileID: 114499592538173831}
+  m_Layer: 5
+  m_Name: AdventurePanelOutline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224992986792138108
+RectTransform:
+  m_GameObject: {fileID: 1499958918439371}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0102644, y: 1.317688, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224276333234560365}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.008976974, y: 0.02192317}
+  m_AnchorMax: {x: 0.9916645, y: 0.9308479}
+  m_AnchoredPosition: {x: 5.960464E-08, y: 0}
+  m_SizeDelta: {x: 1.192093E-07, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222374537668762439
+CanvasRenderer:
+  m_GameObject: {fileID: 1499958918439371}
+--- !u!114 &114499592538173831
+MonoBehaviour:
+  m_GameObject: {fileID: 1499958918439371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 2100000, guid: 33437ff8586c7f344bc94f48392a58e0, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 8ae70c6192c8f784c81924059023dbbe, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!1 &1164571225921970
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224151154900276470}
+  - component: {fileID: 222344637199602849}
+  - component: {fileID: 114413711146575910}
+  m_Layer: 5
+  m_Name: ArrowOutline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224151154900276470
+RectTransform:
+  m_GameObject: {fileID: 1164571225921970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.518367, y: -23.39081, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224276333234560365}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.2174277, y: 0.8383802}
+  m_AnchorMax: {x: 0.3751744, y: 0.9999999}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222344637199602849
+CanvasRenderer:
+  m_GameObject: {fileID: 1164571225921970}
+--- !u!114 &114413711146575910
+MonoBehaviour:
+  m_GameObject: {fileID: 1164571225921970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 2100000, guid: 33437ff8586c7f344bc94f48392a58e0, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 3aa166e43b5bd4d4a9049647a9637769, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!1 &1794968107653785
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224249326314277837}
+  - component: {fileID: 222464562931002286}
+  - component: {fileID: 114415930870436858}
+  - component: {fileID: 114220021207384279}
+  m_Layer: 5
+  m_Name: Arrow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224249326314277837
+RectTransform:
+  m_GameObject: {fileID: 1794968107653785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.503631, y: -22.44777, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224276333234560365}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.2267204, y: 0.828547}
+  m_AnchorMax: {x: 0.3668026, y: 0.9760326}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222464562931002286
+CanvasRenderer:
+  m_GameObject: {fileID: 1794968107653785}
+--- !u!114 &114415930870436858
+MonoBehaviour:
+  m_GameObject: {fileID: 1794968107653785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 2100000, guid: 33437ff8586c7f344bc94f48392a58e0, type: 2}
+  m_Color: {r: 0.4862745, g: 0.1843137, b: 0.01176471, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: d46f8daf22173b447a15351536ea2782, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114220021207384279
+MonoBehaviour:
+  m_GameObject: {fileID: 1794968107653785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c82ff9f541c9ab418101c823b41cc29, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  MascotNames:
+  - AuntArctic
+  - DJCadence
+  - Rockhopper
+  - Rookie
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Colors:
+  - {r: 0.2313726, g: 0.4705882, b: 0.01568628, a: 1}
+  - {r: 0.1372549, g: 0.1372549, b: 0.1960784, a: 1}
+  - {r: 0.4862745, g: 0.1843137, b: 0.01176471, a: 1}
+  - {r: 0.7411765, g: 0.2901961, b: 0.02352941, a: 1}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+--- !u!1 &1791197652274930
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224841820824626471}
+  - component: {fileID: 222219287950524028}
+  - component: {fileID: 114715132199399322}
+  - component: {fileID: 114666843452783488}
+  - component: {fileID: 114957705767867521}
+  m_Layer: 5
+  m_Name: AdventureInfoPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224841820824626471
+RectTransform:
+  m_GameObject: {fileID: 1791197652274930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.01379108, y: 1.189047, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224319511445501116}
+  m_Father: {fileID: 224276333234560365}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.01661513, y: 0.04206088}
+  m_AnchorMax: {x: 0.9842468, y: 0.915321}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222219287950524028
+CanvasRenderer:
+  m_GameObject: {fileID: 1791197652274930}
+--- !u!114 &114715132199399322
+MonoBehaviour:
+  m_GameObject: {fileID: 1791197652274930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 2100000, guid: 33437ff8586c7f344bc94f48392a58e0, type: 2}
+  m_Color: {r: 0.4862745, g: 0.1843137, b: 0.01176471, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 8ae70c6192c8f784c81924059023dbbe, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114666843452783488
+MonoBehaviour:
+  m_GameObject: {fileID: 1791197652274930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_ShowMaskGraphic: 1
+--- !u!114 &114957705767867521
+MonoBehaviour:
+  m_GameObject: {fileID: 1791197652274930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c82ff9f541c9ab418101c823b41cc29, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  MascotNames:
+  - AuntArctic
+  - DJCadence
+  - Rockhopper
+  - Rookie
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Colors:
+  - {r: 0.2313726, g: 0.4705882, b: 0.01568628, a: 1}
+  - {r: 0.1372549, g: 0.1372549, b: 0.1960784, a: 1}
+  - {r: 0.4862745, g: 0.1843137, b: 0.01176471, a: 1}
+  - {r: 0.7411765, g: 0.2901961, b: 0.02352941, a: 1}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+--- !u!1 &1505129996747563
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224319511445501116}
+  - component: {fileID: 222233343477928814}
+  - component: {fileID: 114372220328947636}
+  - component: {fileID: 114269651868849979}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224319511445501116
+RectTransform:
+  m_GameObject: {fileID: 1505129996747563}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -20.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224970867719399935}
+  - {fileID: 224576084159479488}
+  - {fileID: 224947734226245499}
+  - {fileID: 224459642444229422}
+  - {fileID: 224021013236335707}
+  - {fileID: 224578524362956207}
+  - {fileID: 224807647639300496}
+  - {fileID: 224183174576273159}
+  - {fileID: 224797319959325982}
+  - {fileID: 224089569287678966}
+  - {fileID: 224578146572776935}
+  m_Father: {fileID: 224841820824626471}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -20.6}
+  m_SizeDelta: {x: 0, y: -41.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222233343477928814
+CanvasRenderer:
+  m_GameObject: {fileID: 1505129996747563}
+--- !u!114 &114372220328947636
+MonoBehaviour:
+  m_GameObject: {fileID: 1505129996747563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6f480671a997b44b1e73b1240be50b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 2100000, guid: 33437ff8586c7f344bc94f48392a58e0, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  lowPriorityTarget: 0
+--- !u!114 &114269651868849979
+MonoBehaviour:
+  m_GameObject: {fileID: 1505129996747563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Padding:
+    m_Left: 225
+    m_Right: 15
+    m_Top: 30
+    m_Bottom: 15
+  m_ChildAlignment: 0
+  m_Spacing: 6
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+--- !u!1 &1116441527055554
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224970867719399935}
+  - component: {fileID: 222255900646564130}
+  - component: {fileID: 114844543334987178}
+  - component: {fileID: 114832145034604131}
+  - component: {fileID: 114688559546529817}
+  m_Layer: 5
+  m_Name: AvatarIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224970867719399935
+RectTransform:
+  m_GameObject: {fileID: 1116441527055554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 103.1507, y: 123.7596, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224319511445501116}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.043, y: 0.05281032}
+  m_AnchorMax: {x: 0.043, y: 0.05281032}
+  m_AnchoredPosition: {x: 89, y: 83.5}
+  m_SizeDelta: {x: 204, y: 189}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222255900646564130
+CanvasRenderer:
+  m_GameObject: {fileID: 1116441527055554}
+--- !u!114 &114844543334987178
+MonoBehaviour:
+  m_GameObject: {fileID: 1116441527055554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 2100000, guid: 33437ff8586c7f344bc94f48392a58e0, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 993913ce2f769164495f22353d937b27, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114832145034604131
+MonoBehaviour:
+  m_GameObject: {fileID: 1116441527055554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &114688559546529817
+MonoBehaviour:
+  m_GameObject: {fileID: 1116441527055554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db79833c64dc2944eb945a99f89b8983, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  MascotNames:
+  - AuntArctic
+  - DJCadence
+  - Rockhopper
+  - Rookie
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Sprites:
+  - {fileID: 21300000, guid: 76772b5b3eed9194cb23511b853b360f, type: 3}
+  - {fileID: 21300000, guid: 739bacdf69ae654458722546ec245f37, type: 3}
+  - {fileID: 21300000, guid: 993913ce2f769164495f22353d937b27, type: 3}
+  - {fileID: 21300000, guid: 756b55a55081671418941ae2f7cc32c4, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!1 &1376851383726999
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224576084159479488}
+  - component: {fileID: 222598111029280765}
+  - component: {fileID: 114499679096850735}
+  m_Layer: 5
+  m_Name: EpisodeTitleRH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224576084159479488
+RectTransform:
+  m_GameObject: {fileID: 1376851383726999}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.48211, y: 45.01395, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224319511445501116}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222598111029280765
+CanvasRenderer:
+  m_GameObject: {fileID: 1376851383726999}
+--- !u!114 &114499679096850735
+MonoBehaviour:
+  m_GameObject: {fileID: 1376851383726999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9215686, g: 0.7294118, b: 0.4117647, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 0bc604144ba99e343a951d90de0eff4d, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 54
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Ep. 2 A Pirate's Life
+--- !u!1 &1322442136919968
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224947734226245499}
+  - component: {fileID: 222633873816945595}
+  - component: {fileID: 114388252811173956}
+  m_Layer: 5
+  m_Name: EpisodeTitleAA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &224947734226245499
+RectTransform:
+  m_GameObject: {fileID: 1322442136919968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 373.9821, y: -151.0139, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224319511445501116}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 358.5, y: -106}
+  m_SizeDelta: {x: 267, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222633873816945595
+CanvasRenderer:
+  m_GameObject: {fileID: 1322442136919968}
+--- !u!114 &114388252811173956
+MonoBehaviour:
+  m_GameObject: {fileID: 1322442136919968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9803922, g: 0.972549, b: 0.9647059, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4aee35629a995804c9e621b657ae9ba5, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 50
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Ep. 1 Leaky Landing
+--- !u!1 &1474302799716572
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224459642444229422}
+  - component: {fileID: 222064159834489945}
+  - component: {fileID: 114141641371279785}
+  m_Layer: 5
+  m_Name: EpisodeTitleRK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &224459642444229422
+RectTransform:
+  m_GameObject: {fileID: 1474302799716572}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 171.4821, y: -142.1017, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224319511445501116}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 156, y: -97.0878}
+  m_SizeDelta: {x: 252, y: 22.03512}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222064159834489945
+CanvasRenderer:
+  m_GameObject: {fileID: 1474302799716572}
+--- !u!114 &114141641371279785
+MonoBehaviour:
+  m_GameObject: {fileID: 1474302799716572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9058824, g: 0.9254902, b: 0.5960785, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3eb3f5cf6aa922545a1560a2678be1f2, type: 3}
+    m_FontSize: 35
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 101
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Ep. 1 Leaky Landing
+--- !u!1 &1696227275923530
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224021013236335707}
+  - component: {fileID: 222251537196855171}
+  - component: {fileID: 114226633060884358}
+  m_Layer: 5
+  m_Name: EpisodeTitleDJ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &224021013236335707
+RectTransform:
+  m_GameObject: {fileID: 1696227275923530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 189.4821, y: -166.989, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224319511445501116}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 174, y: -121.9751}
+  m_SizeDelta: {x: 288, y: 15.73937}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222251537196855171
+CanvasRenderer:
+  m_GameObject: {fileID: 1696227275923530}
+--- !u!114 &114226633060884358
+MonoBehaviour:
+  m_GameObject: {fileID: 1696227275923530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8352941, g: 0.3921569, b: 0.9921569, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 730997c2a25e5a3499a950854b8c5e43, type: 3}
+    m_FontSize: 35
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 101
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Ep. 1 Leaky Landing
+--- !u!1 &1670095075425373
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224578524362956207}
+  - component: {fileID: 222178134652843007}
+  - component: {fileID: 114873025272262017}
+  m_Layer: 5
+  m_Name: EpisodeInstructionRH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224578524362956207
+RectTransform:
+  m_GameObject: {fileID: 1670095075425373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.48211, y: 45.01395, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224319511445501116}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222178134652843007
+CanvasRenderer:
+  m_GameObject: {fileID: 1670095075425373}
+--- !u!114 &114873025272262017
+MonoBehaviour:
+  m_GameObject: {fileID: 1670095075425373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9215686, g: 0.7294118, b: 0.4117647, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ecd7a041627886f47a0a4a48254d67a3, type: 3}
+    m_FontSize: 26
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 54
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Find the zipline
+--- !u!1 &1099809268089922
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224807647639300496}
+  - component: {fileID: 222562443279590803}
+  - component: {fileID: 114759840686104215}
+  m_Layer: 5
+  m_Name: EpisodeInstructionAA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &224807647639300496
+RectTransform:
+  m_GameObject: {fileID: 1099809268089922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 133.4821, y: -204.3968, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224319511445501116}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 118, y: -159.3829}
+  m_SizeDelta: {x: 176, y: 11.6921}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222562443279590803
+CanvasRenderer:
+  m_GameObject: {fileID: 1099809268089922}
+--- !u!114 &114759840686104215
+MonoBehaviour:
+  m_GameObject: {fileID: 1099809268089922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9803922, g: 0.972549, b: 0.9647059, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ecd7a041627886f47a0a4a48254d67a3, type: 3}
+    m_FontSize: 26
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 54
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Find the zipline
+--- !u!1 &1449098872468823
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224183174576273159}
+  - component: {fileID: 222047908885963504}
+  - component: {fileID: 114379019377888371}
+  m_Layer: 5
+  m_Name: EpisodeInstructionRK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &224183174576273159
+RectTransform:
+  m_GameObject: {fileID: 1449098872468823}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 133.4821, y: -222.0889, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224319511445501116}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 118, y: -177.075}
+  m_SizeDelta: {x: 176, y: 11.6921}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222047908885963504
+CanvasRenderer:
+  m_GameObject: {fileID: 1449098872468823}
+--- !u!114 &114379019377888371
+MonoBehaviour:
+  m_GameObject: {fileID: 1449098872468823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9058824, g: 0.9254902, b: 0.5960785, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ecd7a041627886f47a0a4a48254d67a3, type: 3}
+    m_FontSize: 26
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 54
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Find the zipline
+--- !u!1 &1383035563371263
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224797319959325982}
+  - component: {fileID: 222478327720834085}
+  - component: {fileID: 114988443460458517}
+  m_Layer: 5
+  m_Name: EpisodeInstructionDJ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &224797319959325982
+RectTransform:
+  m_GameObject: {fileID: 1383035563371263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 133.4821, y: -239.781, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224319511445501116}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 118, y: -194.7671}
+  m_SizeDelta: {x: 176, y: 11.6921}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222478327720834085
+CanvasRenderer:
+  m_GameObject: {fileID: 1383035563371263}
+--- !u!114 &114988443460458517
+MonoBehaviour:
+  m_GameObject: {fileID: 1383035563371263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8352941, g: 0.3921569, b: 0.9921569, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ecd7a041627886f47a0a4a48254d67a3, type: 3}
+    m_FontSize: 26
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 54
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Find the zipline
+--- !u!1 &1957417556180415
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224089569287678966}
+  - component: {fileID: 114636197555336754}
+  m_Layer: 5
+  m_Name: TitleSelector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224089569287678966
+RectTransform:
+  m_GameObject: {fileID: 1957417556180415}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.48211, y: 45.01395, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224319511445501116}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &114636197555336754
+MonoBehaviour:
+  m_GameObject: {fileID: 1957417556180415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c302fbed186347b4c83c2ce51dc4eea8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  MascotNames:
+  - AuntArctic
+  - DJCadence
+  - Rockhopper
+  - Rookie
+  GameObjects:
+  - {fileID: 1322442136919968}
+  - {fileID: 1696227275923530}
+  - {fileID: 1376851383726999}
+  - {fileID: 1474302799716572}
+--- !u!1 &1340395508853882
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224578146572776935}
+  - component: {fileID: 114271649557488179}
+  m_Layer: 5
+  m_Name: InstructionsSelector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224578146572776935
+RectTransform:
+  m_GameObject: {fileID: 1340395508853882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.48211, y: 45.01395, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224319511445501116}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &114271649557488179
+MonoBehaviour:
+  m_GameObject: {fileID: 1340395508853882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c302fbed186347b4c83c2ce51dc4eea8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  MascotNames:
+  - AuntArctic
+  - DJCadence
+  - Rockhopper
+  - Rookie
+  GameObjects:
+  - {fileID: 1099809268089922}
+  - {fileID: 1383035563371263}
+  - {fileID: 1670095075425373}
+  - {fileID: 1449098872468823}
+--- !u!1 &1952142248186366
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224605990199811342}
+  - component: {fileID: 222879048845515240}
+  - component: {fileID: 114017418169160101}
+  - component: {fileID: 114800957095620110}
+  - component: {fileID: 114048459502660068}
+  - component: {fileID: 114768247001443424}
+  m_Layer: 5
+  m_Name: AdventureTitleText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224605990199811342
+RectTransform:
+  m_GameObject: {fileID: 1952142248186366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224545723779215296}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.2750469, y: 0.8059524}
+  m_AnchorMax: {x: 0.9475157, y: 0.9507144}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222879048845515240
+CanvasRenderer:
+  m_GameObject: {fileID: 1952142248186366}
+--- !u!114 &114017418169160101
+MonoBehaviour:
+  m_GameObject: {fileID: 1952142248186366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: f17a102356c77214ab4e19f83f427348, type: 3}
+    m_FontSize: 37
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 24
+    m_MaxSize: 37
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Rockhopper's Adventures
+--- !u!114 &114800957095620110
+MonoBehaviour:
+  m_GameObject: {fileID: 1952142248186366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0053ace00a43c8c4c95cca1d6b21b3a6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  token: DailyChallenges.DailyChallengesVertList.Header
+  doNotLocalize: 0
+  stripVisibleNewline: 1
+  platform: 0
+  tokenType: None
+  tokenSubType:
+--- !u!114 &114048459502660068
+MonoBehaviour:
+  m_GameObject: {fileID: 1952142248186366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1172506321aed34fa86694f80eaec45, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  VisibleOnlyForSwitchControl: 0
+  Priority: 0
+  IgnoreText: 0
+  VoiceOnly: 1
+  CustomToken:
+  ReferenceToken: {fileID: 1952142248186366}
+  ReferenceRect: {fileID: 0}
+  DontRender: 0
+  AdditionalReferenceTokens: []
+  CustomOnClickEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  DynamicText:
+--- !u!114 &114768247001443424
+MonoBehaviour:
+  m_GameObject: {fileID: 1952142248186366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.091}
+  m_EffectDistance: {x: 0, y: -4}
+  m_UseGraphicAlpha: 1
+--- !u!1 &1060501171165561
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224401909832957668}
+  - component: {fileID: 222653133197040495}
+  - component: {fileID: 114745186797997152}
+  - component: {fileID: 114701292273359279}
+  m_Layer: 5
+  m_Name: DailiesIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224401909832957668
+RectTransform:
+  m_GameObject: {fileID: 1060501171165561}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224545723779215296}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.04468756, y: 0.6370965}
+  m_AnchorMax: {x: 0.2446875, y: 0.9998083}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222653133197040495
+CanvasRenderer:
+  m_GameObject: {fileID: 1060501171165561}
+--- !u!114 &114745186797997152
+MonoBehaviour:
+  m_GameObject: {fileID: 1060501171165561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 2100000, guid: 33437ff8586c7f344bc94f48392a58e0, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: f2e4b9dda925e0c4c89cc3344abfb0d7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114701292273359279
+MonoBehaviour:
+  m_GameObject: {fileID: 1060501171165561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db79833c64dc2944eb945a99f89b8983, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  MascotNames:
+  - AuntArctic
+  - DJCadence
+  - Rockhopper
+  - Rookie
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  Sprites:
+  - {fileID: 21300000, guid: 9d2a9e67c930c4a49a577f72109b91bb, type: 3}
+  - {fileID: 21300000, guid: 363e89bf064fc534187482534fcba602, type: 3}
+  - {fileID: 21300000, guid: f2e4b9dda925e0c4c89cc3344abfb0d7, type: 3}
+  - {fileID: 21300000, guid: 30561c1a588a2fa42893e48a9504f1f4, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

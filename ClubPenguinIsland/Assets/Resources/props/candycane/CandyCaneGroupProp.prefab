@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1083274938307807}
+  m_IsPrefabParent: 1
+--- !u!1 &1083274938307807
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4589698449060239}
+  - component: {fileID: 33065447214540842}
+  - component: {fileID: 23844220032821408}
+  - component: {fileID: 114668194890005089}
+  - component: {fileID: 114553978902172598}
+  - component: {fileID: 114904101164491021}
+  - component: {fileID: 114351696980960735}
+  - component: {fileID: 114099192189684480}
+  - component: {fileID: 114983483969949045}
+  - component: {fileID: 114580436976391968}
+  m_Layer: 0
+  m_Name: CandyCaneGroupProp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4589698449060239
+Transform:
+  m_GameObject: {fileID: 1083274938307807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33065447214540842
+MeshFilter:
+  m_GameObject: {fileID: 1083274938307807}
+  m_Mesh: {fileID: 4300000, guid: 485997b0f7777b6459c963af716ac73d, type: 2}
+--- !u!23 &23844220032821408
+MeshRenderer:
+  m_GameObject: {fileID: 1083274938307807}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 46e68bf794e84ae49ba59c3f6cbd84d0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &114668194890005089
+MonoBehaviour:
+  m_GameObject: {fileID: 1083274938307807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395d9412b88a2b74eb852ddb603752d3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  UseOnceImmediately: 0
+  StoreAfterUse: 0
+  PlayIdleAnimAfterUse: 1
+  VisualTreatment: 4
+  PulsateInteractButton: 1
+  TargetBoneName: r_wrist_jnt
+  MaxDistanceFromUser: 3
+  CheckCollisions: 1
+  AnimOverrideController: {fileID: 22100000, guid: f2451ad3ee551894e9f67ffe8f872bb6, type: 2}
+  AnimReplacementController: {fileID: 0}
+  IgnoreHoldAnimationComplete: 0
+  IgnoreStoreAnimationComplete: 0
+  CustomCamera: {fileID: 0}
+  RetrieveEaseType: 24
+  EaseTimeRetrieve: 1
+  StoreEaseType: 20
+  EaseTimeStore: 1
+  OnUseDestination: {x: 0, y: 0, z: 0}
+  PropUserRef: {fileID: 0}
+  UpdateUser: 1
+  ExperienceInstanceId:
+  OwnerId: 0
+  PropId:
+  IsOwnerLocalPlayer: 0
+  PropDef: {fileID: 0}
+  IsUseCompleted: 0
+--- !u!114 &114553978902172598
+MonoBehaviour:
+  m_GameObject: {fileID: 1083274938307807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c356f45afc60704eb55d48ed0d73eaf, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114904101164491021
+MonoBehaviour:
+  m_GameObject: {fileID: 1083274938307807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0e7974833775845bc04f499a1b2793, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  PrefabToSpawn: {fileID: 114985714025872947, guid: 6b6316cd79bd41e469091cdc48087a1d, type: 2}
+  IsInstance: 0
+  HideInitially: 1
+  ParentToUser: 1
+  ApplyUserForwardVect: 1
+--- !u!114 &114351696980960735
+MonoBehaviour:
+  m_GameObject: {fileID: 1083274938307807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713df338f5997a44fb7ec0d4b59cbaa5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114099192189684480
+MonoBehaviour:
+  m_GameObject: {fileID: 1083274938307807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba87a4b38676b8449e0efc007e693f0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ShowConfirmationPopup: 0
+  WatchActionEventCancel: 1
+  i18nConfirmationTitleText:
+  i18nConfirmationBodyText:
+  ImageOverride: {fileID: 0}
+  RestoreTouchPadControlsOnCancel: 0
+--- !u!114 &114983483969949045
+MonoBehaviour:
+  m_GameObject: {fileID: 1083274938307807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c553f0769b74a66429283d30443b47ba, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  IKModifiers: []
+--- !u!114 &114580436976391968
+MonoBehaviour:
+  m_GameObject: {fileID: 1083274938307807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e28968e891abe344b6a26f7b56844d5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  SwimControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartySupplies/CandyCane/CandyCaneGroupSwimButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  DivingControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartySupplies/CandyCane/CandyCaneGroupDivingButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  ControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartySupplies/CandyCane/CandyCaneGroupButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  TubeControlsScreenDefinitionContentKey:
+    Key:
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  SitControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartySupplies/CandyCane/CandyCaneGroupSitButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  SitSwimControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartySupplies/CandyCane/CandyCaneGroupSitSwimButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game

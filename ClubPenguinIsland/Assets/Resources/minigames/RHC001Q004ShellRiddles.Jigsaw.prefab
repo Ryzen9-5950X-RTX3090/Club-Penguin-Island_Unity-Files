@@ -1,0 +1,2891 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1018315388594407}
+  m_IsPrefabParent: 1
+--- !u!1 &1018315388594407
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224032872649967480}
+  - component: {fileID: 114344702281438640}
+  - component: {fileID: 114362821660313758}
+  - component: {fileID: 114226566713271789}
+  - component: {fileID: 114102833145561095}
+  m_Layer: 5
+  m_Name: RHC001Q004ShellRiddles.Jigsaw
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224032872649967480
+RectTransform:
+  m_GameObject: {fileID: 1018315388594407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -100}
+  m_LocalScale: {x: 3.4, y: 3.4, z: 1}
+  m_Children:
+  - {fileID: 224221130834892332}
+  - {fileID: 4434728348393900}
+  - {fileID: 4286820884027306}
+  - {fileID: 4529861573332427}
+  - {fileID: 4136478647564684}
+  - {fileID: 4380251603074490}
+  - {fileID: 4664880660688264}
+  - {fileID: 4648743942792829}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &114344702281438640
+MonoBehaviour:
+  m_GameObject: {fileID: 1018315388594407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ce81557241ca44e8ba52b3e8a0174c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CleanOnDisable: 0
+--- !u!114 &114362821660313758
+MonoBehaviour:
+  m_GameObject: {fileID: 1018315388594407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4371e83f8d5c0e243a2c705183b074cb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  SnapDistance: 0.25
+  snapAssistDuration: 0
+  MouseoverColor: {r: 1, g: 1, b: 1, a: 1}
+  ShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  IsMeshPuzzle: 1
+  minigameIntroEaseType: 4
+  minigameSolvedEaseType: 3
+  minigameTweenTime: 0.5
+  minigameDelay: 0
+  introOffset: {x: 0, y: -120, z: 0}
+  audioPuzzleSlideIn: SFX/UI/Item/WhooshIn
+  audioPuzzleSlideOut: SFX/UI/Item/WhooshOut
+  audioPuzzlePieceDrop: SFX/UI/Item/Drop
+  audioPuzzleSolved: MUS/Quest/Rockhopper/Stinger/ObjCompleteHarp
+  switchTo:
+  switchGameObject: {fileID: 0}
+  easeType: 27
+  TweenTimeMin: 0.8
+  TweenTimeMax: 0.8
+  DelayMin: 0.4
+  DelayMax: 0.5
+  pieceEaseType: 3
+  PieceTweenTime: 0.25
+  PieceDelay: 0.5
+  ParticlesLockPiece: {fileID: 1001251852960271, guid: 89dc42ba7d78d604789800165ccd2e3e, type: 2}
+  PieceParticlePosition: {x: 0, y: 0, z: 1}
+  PieceParticleScale: {x: 0.5, y: 0.5, z: 0.5}
+  solveEaseType: 3
+  ArtworkTweenTime: 1
+  ArtworkSolveDelay: 0
+  ParticlesSolvePuzzle: {fileID: 1525017012541128, guid: d9d69a5ca5dae6a4ab5e5ef845ce4d12, type: 2}
+  ArtworkParticlePosition: {x: 0, y: 0.25, z: -1}
+  ArtworkParticleScale: {x: 1, y: 1, z: 1}
+  SuccessColor: {r: 1, g: 0.9960784, b: 0.7764706, a: 1}
+--- !u!114 &114226566713271789
+MonoBehaviour:
+  m_GameObject: {fileID: 1018315388594407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1272d1cb759865d4ab5df19a946a6682, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ModalColor: {r: 0.003921569, g: 0.04313726, b: 0.09019608, a: 1}
+  TileSprite: {fileID: 21300000, guid: 55bc09836fa8bec47af0498219b62e08, type: 3}
+  TileMaterial: {fileID: 0}
+--- !u!114 &114102833145561095
+MonoBehaviour:
+  m_GameObject: {fileID: 1018315388594407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544e23b1291d7bf4999c1173d3af503d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1446381455741385
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224221130834892332}
+  - component: {fileID: 222809310395660822}
+  - component: {fileID: 114204361051292605}
+  - component: {fileID: 114390177447395459}
+  - component: {fileID: 114506062647816543}
+  m_Layer: 5
+  m_Name: CloseBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224221130834892332
+RectTransform:
+  m_GameObject: {fileID: 1446381455741385}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 80, y: 150, z: 50}
+  m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
+  m_Children: []
+  m_Father: {fileID: 224032872649967480}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 80, y: 150}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222809310395660822
+CanvasRenderer:
+  m_GameObject: {fileID: 1446381455741385}
+--- !u!114 &114204361051292605
+MonoBehaviour:
+  m_GameObject: {fileID: 1446381455741385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Material: {fileID: 2100000, guid: c92716ecc6e17504193a7deeb163b14a, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 24041d89f693dd54ab4ae79e268b886a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114390177447395459
+MonoBehaviour:
+  m_GameObject: {fileID: 1446381455741385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 3
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.7843137, g: 0.7843137, b: 0.7843137, a: 1}
+    m_DisabledColor: {r: 0.7843137, g: 0.7843137, b: 0.7843137, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 114204361051292605}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114506062647816543
+MonoBehaviour:
+  m_GameObject: {fileID: 1446381455741385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd38bc210359634b8701e633bd9691f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1582485647515706
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4434728348393900}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4434728348393900
+Transform:
+  m_GameObject: {fileID: 1582485647515706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 60}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4722758772150788}
+  - {fileID: 4880311135590884}
+  m_Father: {fileID: 224032872649967480}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1591480341781522
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4722758772150788}
+  - component: {fileID: 33550095400865786}
+  - component: {fileID: 64861872549615568}
+  - component: {fileID: 23589796630159966}
+  m_Layer: 5
+  m_Name: Bkg artwork
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4722758772150788
+Transform:
+  m_GameObject: {fileID: 1591480341781522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 180, y: 320, z: 1}
+  m_Children:
+  - {fileID: 4038475665724645}
+  m_Father: {fileID: 4434728348393900}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33550095400865786
+MeshFilter:
+  m_GameObject: {fileID: 1591480341781522}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64861872549615568
+MeshCollider:
+  m_GameObject: {fileID: 1591480341781522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &23589796630159966
+MeshRenderer:
+  m_GameObject: {fileID: 1591480341781522}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: eb11533349815a64180f0794bcbc7f06, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1066198557057365
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4038475665724645}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4038475665724645
+Transform:
+  m_GameObject: {fileID: 1066198557057365}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.75, y: 0.412, z: 1}
+  m_Children:
+  - {fileID: 4258958668974576}
+  m_Father: {fileID: 4722758772150788}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!1 &1609164492239560
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4258958668974576}
+  - component: {fileID: 33354744781403392}
+  - component: {fileID: 23282294348758181}
+  m_Layer: 5
+  m_Name: shellRiddlePuzzleBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4258958668974576
+Transform:
+  m_GameObject: {fileID: 1609164492239560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4038475665724645}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33354744781403392
+MeshFilter:
+  m_GameObject: {fileID: 1609164492239560}
+  m_Mesh: {fileID: 4300000, guid: 89c23aecf5852b54d9eba9eb8f32b7e3, type: 2}
+--- !u!23 &23282294348758181
+MeshRenderer:
+  m_GameObject: {fileID: 1609164492239560}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 67f067d3f0168c246b93928c80a74771, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1070704577950119
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4880311135590884}
+  - component: {fileID: 33906787693174379}
+  - component: {fileID: 65194211419351506}
+  - component: {fileID: 23472311956769326}
+  m_Layer: 5
+  m_Name: Area Divider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4880311135590884
+Transform:
+  m_GameObject: {fileID: 1070704577950119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -59.5, z: -60}
+  m_LocalScale: {x: 200, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4434728348393900}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33906787693174379
+MeshFilter:
+  m_GameObject: {fileID: 1070704577950119}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65194211419351506
+BoxCollider:
+  m_GameObject: {fileID: 1070704577950119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &23472311956769326
+MeshRenderer:
+  m_GameObject: {fileID: 1070704577950119}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: eb11533349815a64180f0794bcbc7f06, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1199575030290846
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4286820884027306}
+  m_Layer: 5
+  m_Name: Solve Positions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4286820884027306
+Transform:
+  m_GameObject: {fileID: 1199575030290846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4217060723163125}
+  - {fileID: 4658325418742350}
+  - {fileID: 4317084347399359}
+  - {fileID: 4158668005204011}
+  - {fileID: 4624625670452764}
+  - {fileID: 4796694738442200}
+  - {fileID: 4133026513113281}
+  - {fileID: 4000928362913463}
+  - {fileID: 4864596097663536}
+  m_Father: {fileID: 224032872649967480}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1696106683674658
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4217060723163125}
+  - component: {fileID: 33164838210222236}
+  - component: {fileID: 23802156877163580}
+  - component: {fileID: 64361952364619817}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4217060723163125
+Transform:
+  m_GameObject: {fileID: 1696106683674658}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -28.23644, y: 116.0993, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4286820884027306}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33164838210222236
+MeshFilter:
+  m_GameObject: {fileID: 1696106683674658}
+  m_Mesh: {fileID: 4300000, guid: 2bf2f4a5e05727e4896cdf66a1b59e74, type: 2}
+--- !u!23 &23802156877163580
+MeshRenderer:
+  m_GameObject: {fileID: 1696106683674658}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64361952364619817
+MeshCollider:
+  m_GameObject: {fileID: 1696106683674658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 2bf2f4a5e05727e4896cdf66a1b59e74, type: 2}
+--- !u!1 &1887286212890474
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4658325418742350}
+  - component: {fileID: 33637405310787938}
+  - component: {fileID: 23609481293499824}
+  - component: {fileID: 64717110937364311}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4658325418742350
+Transform:
+  m_GameObject: {fileID: 1887286212890474}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 41.3904, y: 115.0278, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4286820884027306}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33637405310787938
+MeshFilter:
+  m_GameObject: {fileID: 1887286212890474}
+  m_Mesh: {fileID: 4300000, guid: bf1a5beae93ca4745906273fd487d22b, type: 2}
+--- !u!23 &23609481293499824
+MeshRenderer:
+  m_GameObject: {fileID: 1887286212890474}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64717110937364311
+MeshCollider:
+  m_GameObject: {fileID: 1887286212890474}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: bf1a5beae93ca4745906273fd487d22b, type: 2}
+--- !u!1 &1662518223407424
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4317084347399359}
+  - component: {fileID: 33650210147778381}
+  - component: {fileID: 23565761781127181}
+  - component: {fileID: 64318375834610677}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4317084347399359
+Transform:
+  m_GameObject: {fileID: 1662518223407424}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -47.86937, y: 57.98988, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4286820884027306}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33650210147778381
+MeshFilter:
+  m_GameObject: {fileID: 1662518223407424}
+  m_Mesh: {fileID: 4300000, guid: a57605a6fd585e44eba8a8d29925951a, type: 2}
+--- !u!23 &23565761781127181
+MeshRenderer:
+  m_GameObject: {fileID: 1662518223407424}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64318375834610677
+MeshCollider:
+  m_GameObject: {fileID: 1662518223407424}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: a57605a6fd585e44eba8a8d29925951a, type: 2}
+--- !u!1 &1385231042632151
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4158668005204011}
+  - component: {fileID: 33307458425578837}
+  - component: {fileID: 23624311788665907}
+  - component: {fileID: 64382019342191685}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4158668005204011
+Transform:
+  m_GameObject: {fileID: 1385231042632151}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 1.292986, y: 86.43832, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4286820884027306}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33307458425578837
+MeshFilter:
+  m_GameObject: {fileID: 1385231042632151}
+  m_Mesh: {fileID: 4300000, guid: 4a4249b00f7b3874b9362bd64dfe3395, type: 2}
+--- !u!23 &23624311788665907
+MeshRenderer:
+  m_GameObject: {fileID: 1385231042632151}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64382019342191685
+MeshCollider:
+  m_GameObject: {fileID: 1385231042632151}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4a4249b00f7b3874b9362bd64dfe3395, type: 2}
+--- !u!1 &1469702580895040
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4624625670452764}
+  - component: {fileID: 33441091199505065}
+  - component: {fileID: 23129195747976513}
+  - component: {fileID: 64710889380356569}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4624625670452764
+Transform:
+  m_GameObject: {fileID: 1469702580895040}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 39.23186, y: 69.65973, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4286820884027306}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33441091199505065
+MeshFilter:
+  m_GameObject: {fileID: 1469702580895040}
+  m_Mesh: {fileID: 4300000, guid: 69c5c5894a3abb843a6511f6a949a6d4, type: 2}
+--- !u!23 &23129195747976513
+MeshRenderer:
+  m_GameObject: {fileID: 1469702580895040}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64710889380356569
+MeshCollider:
+  m_GameObject: {fileID: 1469702580895040}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 69c5c5894a3abb843a6511f6a949a6d4, type: 2}
+--- !u!1 &1033638088329744
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4796694738442200}
+  - component: {fileID: 33957143958562258}
+  - component: {fileID: 23462707617935003}
+  - component: {fileID: 64203379206058234}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4796694738442200
+Transform:
+  m_GameObject: {fileID: 1033638088329744}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -41.89025, y: -6.53972, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4286820884027306}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33957143958562258
+MeshFilter:
+  m_GameObject: {fileID: 1033638088329744}
+  m_Mesh: {fileID: 4300000, guid: 6a1acce70f6e63f478f54d3fae3cba19, type: 2}
+--- !u!23 &23462707617935003
+MeshRenderer:
+  m_GameObject: {fileID: 1033638088329744}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64203379206058234
+MeshCollider:
+  m_GameObject: {fileID: 1033638088329744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 6a1acce70f6e63f478f54d3fae3cba19, type: 2}
+--- !u!1 &1341605184569581
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4133026513113281}
+  - component: {fileID: 33770538616257999}
+  - component: {fileID: 23803902367422295}
+  - component: {fileID: 64223311270912716}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4133026513113281
+Transform:
+  m_GameObject: {fileID: 1341605184569581}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -6.474857, y: 41.08054, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4286820884027306}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33770538616257999
+MeshFilter:
+  m_GameObject: {fileID: 1341605184569581}
+  m_Mesh: {fileID: 4300000, guid: 4ada303c0fe771b40827c5e79c27dfdb, type: 2}
+--- !u!23 &23803902367422295
+MeshRenderer:
+  m_GameObject: {fileID: 1341605184569581}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64223311270912716
+MeshCollider:
+  m_GameObject: {fileID: 1341605184569581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4ada303c0fe771b40827c5e79c27dfdb, type: 2}
+--- !u!1 &1984771355905259
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000928362913463}
+  - component: {fileID: 33054188688936646}
+  - component: {fileID: 23754497665067742}
+  - component: {fileID: 64938593741020893}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000928362913463
+Transform:
+  m_GameObject: {fileID: 1984771355905259}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 39.81198, y: 1.985544, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4286820884027306}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33054188688936646
+MeshFilter:
+  m_GameObject: {fileID: 1984771355905259}
+  m_Mesh: {fileID: 4300000, guid: 89b438133e136514992451de8f67f265, type: 2}
+--- !u!23 &23754497665067742
+MeshRenderer:
+  m_GameObject: {fileID: 1984771355905259}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64938593741020893
+MeshCollider:
+  m_GameObject: {fileID: 1984771355905259}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 89b438133e136514992451de8f67f265, type: 2}
+--- !u!1 &1482034912107378
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4864596097663536}
+  - component: {fileID: 33865548674165298}
+  - component: {fileID: 23620226441415824}
+  - component: {fileID: 64582188240379495}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4864596097663536
+Transform:
+  m_GameObject: {fileID: 1482034912107378}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 12.89573, y: -18.82521, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4286820884027306}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33865548674165298
+MeshFilter:
+  m_GameObject: {fileID: 1482034912107378}
+  m_Mesh: {fileID: 4300000, guid: b85de0b7504f784449d925fe57dbfb02, type: 2}
+--- !u!23 &23620226441415824
+MeshRenderer:
+  m_GameObject: {fileID: 1482034912107378}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64582188240379495
+MeshCollider:
+  m_GameObject: {fileID: 1482034912107378}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: b85de0b7504f784449d925fe57dbfb02, type: 2}
+--- !u!1 &1778875466438063
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4529861573332427}
+  m_Layer: 5
+  m_Name: Start Positions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4529861573332427
+Transform:
+  m_GameObject: {fileID: 1778875466438063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
+  m_LocalScale: {x: 0.53, y: 0.53, z: 0.53}
+  m_Children:
+  - {fileID: 4888798211780020}
+  - {fileID: 4554003328383438}
+  - {fileID: 4724619363690542}
+  - {fileID: 4838021958423061}
+  - {fileID: 4775623191452935}
+  - {fileID: 4474415272497714}
+  - {fileID: 4570187325983326}
+  - {fileID: 4432143678770597}
+  - {fileID: 4406118575606807}
+  m_Father: {fileID: 224032872649967480}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1451676244972606
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4888798211780020}
+  - component: {fileID: 33782937755252559}
+  - component: {fileID: 23608239218798128}
+  - component: {fileID: 64728434710600928}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4888798211780020
+Transform:
+  m_GameObject: {fileID: 1451676244972606}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -41.5, y: -155.9, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4529861573332427}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33782937755252559
+MeshFilter:
+  m_GameObject: {fileID: 1451676244972606}
+  m_Mesh: {fileID: 4300000, guid: 2bf2f4a5e05727e4896cdf66a1b59e74, type: 2}
+--- !u!23 &23608239218798128
+MeshRenderer:
+  m_GameObject: {fileID: 1451676244972606}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64728434710600928
+MeshCollider:
+  m_GameObject: {fileID: 1451676244972606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 2bf2f4a5e05727e4896cdf66a1b59e74, type: 2}
+--- !u!1 &1438939900667571
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4554003328383438}
+  - component: {fileID: 33417867058351778}
+  - component: {fileID: 23486544617576776}
+  - component: {fileID: 64351563229152819}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4554003328383438
+Transform:
+  m_GameObject: {fileID: 1438939900667571}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -62.5, y: -253.5, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4529861573332427}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33417867058351778
+MeshFilter:
+  m_GameObject: {fileID: 1438939900667571}
+  m_Mesh: {fileID: 4300000, guid: bf1a5beae93ca4745906273fd487d22b, type: 2}
+--- !u!23 &23486544617576776
+MeshRenderer:
+  m_GameObject: {fileID: 1438939900667571}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64351563229152819
+MeshCollider:
+  m_GameObject: {fileID: 1438939900667571}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: bf1a5beae93ca4745906273fd487d22b, type: 2}
+--- !u!1 &1055742289818808
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4724619363690542}
+  - component: {fileID: 33847570456382998}
+  - component: {fileID: 23447713304202594}
+  - component: {fileID: 64278726512249146}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4724619363690542
+Transform:
+  m_GameObject: {fileID: 1055742289818808}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 68.8, y: -242, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4529861573332427}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33847570456382998
+MeshFilter:
+  m_GameObject: {fileID: 1055742289818808}
+  m_Mesh: {fileID: 4300000, guid: a57605a6fd585e44eba8a8d29925951a, type: 2}
+--- !u!23 &23447713304202594
+MeshRenderer:
+  m_GameObject: {fileID: 1055742289818808}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64278726512249146
+MeshCollider:
+  m_GameObject: {fileID: 1055742289818808}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: a57605a6fd585e44eba8a8d29925951a, type: 2}
+--- !u!1 &1460677053309231
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4838021958423061}
+  - component: {fileID: 33827767585878639}
+  - component: {fileID: 23571417077033681}
+  - component: {fileID: 64561703318192828}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4838021958423061
+Transform:
+  m_GameObject: {fileID: 1460677053309231}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 6.5, y: -239.5, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4529861573332427}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33827767585878639
+MeshFilter:
+  m_GameObject: {fileID: 1460677053309231}
+  m_Mesh: {fileID: 4300000, guid: 4a4249b00f7b3874b9362bd64dfe3395, type: 2}
+--- !u!23 &23571417077033681
+MeshRenderer:
+  m_GameObject: {fileID: 1460677053309231}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64561703318192828
+MeshCollider:
+  m_GameObject: {fileID: 1460677053309231}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4a4249b00f7b3874b9362bd64dfe3395, type: 2}
+--- !u!1 &1273420534208591
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4775623191452935}
+  - component: {fileID: 33938880299638259}
+  - component: {fileID: 23939443922746166}
+  - component: {fileID: 64573473358616951}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4775623191452935
+Transform:
+  m_GameObject: {fileID: 1273420534208591}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 124.8, y: -256.3, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4529861573332427}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33938880299638259
+MeshFilter:
+  m_GameObject: {fileID: 1273420534208591}
+  m_Mesh: {fileID: 4300000, guid: 69c5c5894a3abb843a6511f6a949a6d4, type: 2}
+--- !u!23 &23939443922746166
+MeshRenderer:
+  m_GameObject: {fileID: 1273420534208591}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64573473358616951
+MeshCollider:
+  m_GameObject: {fileID: 1273420534208591}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 69c5c5894a3abb843a6511f6a949a6d4, type: 2}
+--- !u!1 &1186138988108831
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4474415272497714}
+  - component: {fileID: 33672991386497362}
+  - component: {fileID: 23126317865230259}
+  - component: {fileID: 64385936057862588}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4474415272497714
+Transform:
+  m_GameObject: {fileID: 1186138988108831}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 131.6, y: -171.4, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4529861573332427}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33672991386497362
+MeshFilter:
+  m_GameObject: {fileID: 1186138988108831}
+  m_Mesh: {fileID: 4300000, guid: 6a1acce70f6e63f478f54d3fae3cba19, type: 2}
+--- !u!23 &23126317865230259
+MeshRenderer:
+  m_GameObject: {fileID: 1186138988108831}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64385936057862588
+MeshCollider:
+  m_GameObject: {fileID: 1186138988108831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 6a1acce70f6e63f478f54d3fae3cba19, type: 2}
+--- !u!1 &1699399972042830
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4570187325983326}
+  - component: {fileID: 33875107804495025}
+  - component: {fileID: 23471230555912861}
+  - component: {fileID: 64340596341564224}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4570187325983326
+Transform:
+  m_GameObject: {fileID: 1699399972042830}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -128.8, y: -255.5, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4529861573332427}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33875107804495025
+MeshFilter:
+  m_GameObject: {fileID: 1699399972042830}
+  m_Mesh: {fileID: 4300000, guid: 4ada303c0fe771b40827c5e79c27dfdb, type: 2}
+--- !u!23 &23471230555912861
+MeshRenderer:
+  m_GameObject: {fileID: 1699399972042830}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64340596341564224
+MeshCollider:
+  m_GameObject: {fileID: 1699399972042830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4ada303c0fe771b40827c5e79c27dfdb, type: 2}
+--- !u!1 &1608619329156300
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4432143678770597}
+  - component: {fileID: 33337044113523090}
+  - component: {fileID: 23765031476530018}
+  - component: {fileID: 64098094251912304}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4432143678770597
+Transform:
+  m_GameObject: {fileID: 1608619329156300}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: -123.5, y: -175.5, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4529861573332427}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33337044113523090
+MeshFilter:
+  m_GameObject: {fileID: 1608619329156300}
+  m_Mesh: {fileID: 4300000, guid: 89b438133e136514992451de8f67f265, type: 2}
+--- !u!23 &23765031476530018
+MeshRenderer:
+  m_GameObject: {fileID: 1608619329156300}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64098094251912304
+MeshCollider:
+  m_GameObject: {fileID: 1608619329156300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 89b438133e136514992451de8f67f265, type: 2}
+--- !u!1 &1786844213988280
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4406118575606807}
+  - component: {fileID: 33511312213431113}
+  - component: {fileID: 23785683761598260}
+  - component: {fileID: 64397134982188038}
+  m_Layer: 5
+  m_Name: ShellRiddlesPuzzlePieceI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4406118575606807
+Transform:
+  m_GameObject: {fileID: 1786844213988280}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 52.8, y: -166, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4529861573332427}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33511312213431113
+MeshFilter:
+  m_GameObject: {fileID: 1786844213988280}
+  m_Mesh: {fileID: 4300000, guid: b85de0b7504f784449d925fe57dbfb02, type: 2}
+--- !u!23 &23785683761598260
+MeshRenderer:
+  m_GameObject: {fileID: 1786844213988280}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &64397134982188038
+MeshCollider:
+  m_GameObject: {fileID: 1786844213988280}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: b85de0b7504f784449d925fe57dbfb02, type: 2}
+--- !u!1 &1078209024043070
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4136478647564684}
+  m_Layer: 5
+  m_Name: Completed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4136478647564684
+Transform:
+  m_GameObject: {fileID: 1078209024043070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 40}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4119195381548378}
+  m_Father: {fileID: 224032872649967480}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1067558098116173
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4119195381548378}
+  m_Layer: 5
+  m_Name: Completed Artwork
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4119195381548378
+Transform:
+  m_GameObject: {fileID: 1067558098116173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4250281247253389}
+  m_Father: {fileID: 4136478647564684}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1484173875796225
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4250281247253389}
+  - component: {fileID: 33612251759125710}
+  - component: {fileID: 23407166933096115}
+  m_Layer: 5
+  m_Name: shellRiddlePuzzlePiecesFixed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4250281247253389
+Transform:
+  m_GameObject: {fileID: 1484173875796225}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 135, y: 132, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4119195381548378}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
+--- !u!33 &33612251759125710
+MeshFilter:
+  m_GameObject: {fileID: 1484173875796225}
+  m_Mesh: {fileID: 4300000, guid: 440335b36500a5249aea1018791ebe1e, type: 2}
+--- !u!23 &23407166933096115
+MeshRenderer:
+  m_GameObject: {fileID: 1484173875796225}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d4ea5ed16eec6734f880ce8b531934e0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1265044130076431
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4380251603074490}
+  m_Layer: 5
+  m_Name: Foreground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4380251603074490
+Transform:
+  m_GameObject: {fileID: 1265044130076431}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4364258355086737}
+  m_Father: {fileID: 224032872649967480}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1345742179000854
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4364258355086737}
+  m_Layer: 5
+  m_Name: Fg artwork
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4364258355086737
+Transform:
+  m_GameObject: {fileID: 1345742179000854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 180, y: 320, z: 1}
+  m_Children:
+  - {fileID: 4470048787304967}
+  m_Father: {fileID: 4380251603074490}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1236951617938698
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4470048787304967}
+  m_Layer: 5
+  m_Name: Pegs (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4470048787304967
+Transform:
+  m_GameObject: {fileID: 1236951617938698}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: -0.294, z: 0}
+  m_LocalScale: {x: 0.4084967, y: 0.2297794, z: 1}
+  m_Children:
+  - {fileID: 4622694679986180}
+  - {fileID: 4952147621427409}
+  - {fileID: 4374352385074959}
+  - {fileID: 4141427126456591}
+  - {fileID: 4573343157872312}
+  - {fileID: 4321263777629647}
+  - {fileID: 4797741244609959}
+  - {fileID: 4092329504531763}
+  - {fileID: 4218983473993228}
+  - {fileID: 4531083046980391}
+  - {fileID: 4414580191446651}
+  - {fileID: 4745246129368353}
+  m_Father: {fileID: 4364258355086737}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -180, y: 0, z: 180}
+--- !u!1 &1136116479471692
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4622694679986180}
+  - component: {fileID: 33688494370617298}
+  - component: {fileID: 23211996082055742}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4622694679986180
+Transform:
+  m_GameObject: {fileID: 1136116479471692}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8058987, y: 2.923063, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33688494370617298
+MeshFilter:
+  m_GameObject: {fileID: 1136116479471692}
+  m_Mesh: {fileID: 4300000, guid: 91b117d129fdcd54c8b0329eb785a724, type: 2}
+--- !u!23 &23211996082055742
+MeshRenderer:
+  m_GameObject: {fileID: 1136116479471692}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1389992609638203
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4952147621427409}
+  - component: {fileID: 33842378703981909}
+  - component: {fileID: 23909787250817293}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4952147621427409
+Transform:
+  m_GameObject: {fileID: 1389992609638203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6707914, y: 2.611586, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33842378703981909
+MeshFilter:
+  m_GameObject: {fileID: 1389992609638203}
+  m_Mesh: {fileID: 4300000, guid: 15cf3ba12431c16468946137ab4873d5, type: 2}
+--- !u!23 &23909787250817293
+MeshRenderer:
+  m_GameObject: {fileID: 1389992609638203}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1961479586001300
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4374352385074959}
+  - component: {fileID: 33425685627323386}
+  - component: {fileID: 23147247657386919}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4374352385074959
+Transform:
+  m_GameObject: {fileID: 1961479586001300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2682083, y: 2.388082, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33425685627323386
+MeshFilter:
+  m_GameObject: {fileID: 1961479586001300}
+  m_Mesh: {fileID: 4300000, guid: c03af932850edb243beae81d7b9ef82a, type: 2}
+--- !u!23 &23147247657386919
+MeshRenderer:
+  m_GameObject: {fileID: 1961479586001300}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1206248607491512
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4141427126456591}
+  - component: {fileID: 33448001709803223}
+  - component: {fileID: 23102129593608550}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4141427126456591
+Transform:
+  m_GameObject: {fileID: 1206248607491512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07422297, y: 2.793633, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33448001709803223
+MeshFilter:
+  m_GameObject: {fileID: 1206248607491512}
+  m_Mesh: {fileID: 4300000, guid: e001d9657ab26414383c5f725da6aee2, type: 2}
+--- !u!23 &23102129593608550
+MeshRenderer:
+  m_GameObject: {fileID: 1206248607491512}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1427823311703531
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4573343157872312}
+  - component: {fileID: 33152276451317500}
+  - component: {fileID: 23613142593383578}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4573343157872312
+Transform:
+  m_GameObject: {fileID: 1427823311703531}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1629421, y: 2.505771, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33152276451317500
+MeshFilter:
+  m_GameObject: {fileID: 1427823311703531}
+  m_Mesh: {fileID: 4300000, guid: 4ea02022dcafeb54e90a6b462221de7f, type: 2}
+--- !u!23 &23613142593383578
+MeshRenderer:
+  m_GameObject: {fileID: 1427823311703531}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1562908493638008
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4321263777629647}
+  - component: {fileID: 33527475251051610}
+  - component: {fileID: 23017192903403538}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelF
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4321263777629647
+Transform:
+  m_GameObject: {fileID: 1562908493638008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7359774, y: 2.872802, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33527475251051610
+MeshFilter:
+  m_GameObject: {fileID: 1562908493638008}
+  m_Mesh: {fileID: 4300000, guid: 253292fe6d1215d4da637317b1ec34e9, type: 2}
+--- !u!23 &23017192903403538
+MeshRenderer:
+  m_GameObject: {fileID: 1562908493638008}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1036564911748525
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4797741244609959}
+  - component: {fileID: 33677393594485121}
+  - component: {fileID: 23560735552270090}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4797741244609959
+Transform:
+  m_GameObject: {fileID: 1036564911748525}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6641155, y: 1.8603, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33677393594485121
+MeshFilter:
+  m_GameObject: {fileID: 1036564911748525}
+  m_Mesh: {fileID: 4300000, guid: 8246d8db81767ee4b81d9ba568054da8, type: 2}
+--- !u!23 &23560735552270090
+MeshRenderer:
+  m_GameObject: {fileID: 1036564911748525}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1286626540365014
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4092329504531763}
+  - component: {fileID: 33410746781856757}
+  - component: {fileID: 23935073757135352}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4092329504531763
+Transform:
+  m_GameObject: {fileID: 1286626540365014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1470331, y: 1.926878, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33410746781856757
+MeshFilter:
+  m_GameObject: {fileID: 1286626540365014}
+  m_Mesh: {fileID: 4300000, guid: 0a5e20a9ecf98144ab7914cc058330ad, type: 2}
+--- !u!23 &23935073757135352
+MeshRenderer:
+  m_GameObject: {fileID: 1286626540365014}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1987119901557774
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4218983473993228}
+  - component: {fileID: 33537352924948599}
+  - component: {fileID: 23643276197824225}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4218983473993228
+Transform:
+  m_GameObject: {fileID: 1987119901557774}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1991495, y: 1.695346, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33537352924948599
+MeshFilter:
+  m_GameObject: {fileID: 1987119901557774}
+  m_Mesh: {fileID: 4300000, guid: ed47166507c1b97478a40cfea649945a, type: 2}
+--- !u!23 &23643276197824225
+MeshRenderer:
+  m_GameObject: {fileID: 1987119901557774}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1936761616116601
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4531083046980391}
+  - component: {fileID: 33470129135106837}
+  - component: {fileID: 23080555562201295}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelJ
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4531083046980391
+Transform:
+  m_GameObject: {fileID: 1936761616116601}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5457797, y: 2.115062, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33470129135106837
+MeshFilter:
+  m_GameObject: {fileID: 1936761616116601}
+  m_Mesh: {fileID: 4300000, guid: fac29d10f8317794f935c4a3182d6d2f, type: 2}
+--- !u!23 &23080555562201295
+MeshRenderer:
+  m_GameObject: {fileID: 1936761616116601}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1391051235267766
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4414580191446651}
+  - component: {fileID: 33423824790181486}
+  - component: {fileID: 23703440499632317}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4414580191446651
+Transform:
+  m_GameObject: {fileID: 1391051235267766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3495269, y: 1.423198, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33423824790181486
+MeshFilter:
+  m_GameObject: {fileID: 1391051235267766}
+  m_Mesh: {fileID: 4300000, guid: 226800afb17e69d4381c873629b4aaa3, type: 2}
+--- !u!23 &23703440499632317
+MeshRenderer:
+  m_GameObject: {fileID: 1391051235267766}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1097320618427375
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4745246129368353}
+  - component: {fileID: 33160638009366419}
+  - component: {fileID: 23906271694208619}
+  m_Layer: 5
+  m_Name: gearPuzzleWheelL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4745246129368353
+Transform:
+  m_GameObject: {fileID: 1097320618427375}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.6249932, y: 1.258797, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4470048787304967}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33160638009366419
+MeshFilter:
+  m_GameObject: {fileID: 1097320618427375}
+  m_Mesh: {fileID: 4300000, guid: 2a65fa559571e3042a56d38ccd551c7c, type: 2}
+--- !u!23 &23906271694208619
+MeshRenderer:
+  m_GameObject: {fileID: 1097320618427375}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0d868d0ff18b34c48b05422fde4c32f1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1541298064911858
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4664880660688264}
+  m_Layer: 5
+  m_Name: IntroAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4664880660688264
+Transform:
+  m_GameObject: {fileID: 1541298064911858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4968483976297410}
+  m_Father: {fileID: 224032872649967480}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1762373392376622
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4968483976297410}
+  - component: {fileID: 33301231334270929}
+  - component: {fileID: 64108817388804296}
+  - component: {fileID: 23682266276753000}
+  m_Layer: 5
+  m_Name: Animation Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4968483976297410
+Transform:
+  m_GameObject: {fileID: 1762373392376622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4664880660688264}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33301231334270929
+MeshFilter:
+  m_GameObject: {fileID: 1762373392376622}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64108817388804296
+MeshCollider:
+  m_GameObject: {fileID: 1762373392376622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &23682266276753000
+MeshRenderer:
+  m_GameObject: {fileID: 1762373392376622}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 62dab8263f5bb3148bd29e2ca182646f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1080216975581290
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4648743942792829}
+  m_Layer: 5
+  m_Name: SolvedAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4648743942792829
+Transform:
+  m_GameObject: {fileID: 1080216975581290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4016896142769923}
+  m_Father: {fileID: 224032872649967480}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1793369049140510
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4016896142769923}
+  - component: {fileID: 33019435094627146}
+  - component: {fileID: 64129434145364226}
+  - component: {fileID: 23050855392237146}
+  m_Layer: 5
+  m_Name: Animation Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4016896142769923
+Transform:
+  m_GameObject: {fileID: 1793369049140510}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4648743942792829}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33019435094627146
+MeshFilter:
+  m_GameObject: {fileID: 1793369049140510}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64129434145364226
+MeshCollider:
+  m_GameObject: {fileID: 1793369049140510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &23050855392237146
+MeshRenderer:
+  m_GameObject: {fileID: 1793369049140510}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1356364ef6b8d2b44afafd5e47817ae0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

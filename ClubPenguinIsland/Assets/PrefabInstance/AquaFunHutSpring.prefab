@@ -1,0 +1,316 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1164707068291981}
+  m_IsPrefabParent: 1
+--- !u!1 &1164707068291981
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4144501770946176}
+  - component: {fileID: 95499756439065234}
+  m_Layer: 0
+  m_Name: AquaFunHutSpring
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4144501770946176
+Transform:
+  m_GameObject: {fileID: 1164707068291981}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.906837, y: -1.437865, z: 31.39582}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4557410771435791}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95499756439065234
+Animator:
+  serializedVersion: 3
+  m_GameObject: {fileID: 1164707068291981}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e539a0aef7f298743bafe71abc24c6ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage:
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &1206516974988482
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4557410771435791}
+  - component: {fileID: 65246207932877217}
+  - component: {fileID: 114936399915857801}
+  - component: {fileID: 114752550521397574}
+  - component: {fileID: 114689263227972063}
+  - component: {fileID: 114585669648866180}
+  - component: {fileID: 114008935867017214}
+  - component: {fileID: 114566663730778989}
+  - component: {fileID: 114134400318263645}
+  - component: {fileID: 114777263849678864}
+  - component: {fileID: 114900153229871275}
+  m_Layer: 26
+  m_Name: Spring
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4557410771435791
+Transform:
+  m_GameObject: {fileID: 1206516974988482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4322089106628476}
+  m_Father: {fileID: 4144501770946176}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65246207932877217
+BoxCollider:
+  m_GameObject: {fileID: 1206516974988482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.5, z: 1.1}
+  m_Center: {x: 0, y: -0.1, z: 0}
+--- !u!114 &114936399915857801
+MonoBehaviour:
+  m_GameObject: {fileID: 1206516974988482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8def37825790c44cb2524ab1b90ed49, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: Buttonless Interaction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 2
+  ParentId: -1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  IsInteractionBroadcasted: 0
+--- !u!114 &114752550521397574
+MonoBehaviour:
+  m_GameObject: {fileID: 1206516974988482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59a5ebb9455d02409174dca97b92cad, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: Impulse on Penguin
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 1
+  ParentId: 2
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  StartTransform: {fileID: 0}
+  DirectionY: {fileID: 0}
+  DirectionZ: {fileID: 4322089106628476}
+  DirectionTo: {fileID: 0}
+  Direction: {x: 0, y: 0, z: 0}
+  Magnitude: 11.5
+  AddDirection: {x: 0, y: 0, z: 0}
+  AddMagnitude: 0
+  SetRunLocomotion: 1
+  PreserveTubing: 1
+--- !u!114 &114689263227972063
+MonoBehaviour:
+  m_GameObject: {fileID: 1206516974988482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efbe6e9bb678af14e85b79f4f80396a3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: Play Spring Launch Anim
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 4
+  ParentId: 13
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  StateName: Base Layer.Interactions.GeyserLaunch
+  LayerIndex: 0
+  Duration: 0
+  NormStartTime: 0
+  AnimateTranslation: 0
+  AnimateRotation: 0
+  IgnoreCollisions: 0
+  MakeAnimRelative: 0
+  IdealStartTransform: {fileID: 0}
+  WarpStartTime: 0
+  WarpEndTime: 0
+--- !u!114 &114585669648866180
+MonoBehaviour:
+  m_GameObject: {fileID: 1206516974988482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49012b5031d7c94392572e948ff9f94, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: LogAnalyticsGameActionAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 10
+  ParentId: -1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  Context: mainUI
+  Action: special_action
+  Type: spring
+  Message:
+  Location:
+  IsSingular: 0
+  SingularID:
+--- !u!114 &114008935867017214
+MonoBehaviour:
+  m_GameObject: {fileID: 1206516974988482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6c58258db13f1449e0755456b06717, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: DisallowLocomotionControllerAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 11
+  ParentId: -1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  RunDelay: 0
+  SwimDelay: 0.25
+  SlideDelay: 0
+  SitDelay: 0
+--- !u!114 &114566663730778989
+MonoBehaviour:
+  m_GameObject: {fileID: 1206516974988482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2a2d941c259814f89c4cbc392c1fe7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: StayOnTubeAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 12
+  ParentId: -1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+--- !u!114 &114134400318263645
+MonoBehaviour:
+  m_GameObject: {fileID: 1206516974988482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b8ada14a7068489c8873182184d42, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: IfLocomotionAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 13
+  ParentId: 1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  Sitting: 0
+  Tubing: 0
+  Swimming: 1
+  Running: 1
+--- !u!114 &114777263849678864
+MonoBehaviour:
+  m_GameObject: {fileID: 1206516974988482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b49bc4a0630f140a866b5a6bcfe37c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: SendFabricEventAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 14
+  ParentId: 1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  EventName: SFX/Player/FlyWhiz
+  EventAction: 0
+--- !u!114 &114900153229871275
+MonoBehaviour:
+  m_GameObject: {fileID: 1206516974988482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea36644c938f77347ab330b353b27552, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: WaitAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 16
+  ParentId: 4
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  Duration: 0.6
+--- !u!1 &1207553836047612
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4322089106628476}
+  m_Layer: 0
+  m_Name: LaunchDir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4322089106628476
+Transform:
+  m_GameObject: {fileID: 1207553836047612}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -3.892928E-07, y: 0.5499999, z: -2.607703E-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4557410771435791}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}

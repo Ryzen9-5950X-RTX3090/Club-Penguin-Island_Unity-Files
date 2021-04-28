@@ -1,0 +1,257 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1325758100427389}
+  m_IsPrefabParent: 1
+--- !u!1 &1325758100427389
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4146608703704065}
+  - component: {fileID: 114710525630584803}
+  - component: {fileID: 114566094020740074}
+  m_Layer: 8
+  m_Name: IglooGUI_Chat
+  m_TagString: ChatUI
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4146608703704065
+Transform:
+  m_GameObject: {fileID: 1325758100427389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224851286035251734}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114710525630584803
+MonoBehaviour:
+  m_GameObject: {fileID: 1325758100427389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5231a52ee9a0d9549bd3c7a2ad7806e3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  GameCamera: {fileID: 0}
+  ActiveChatMode: 0
+--- !u!114 &114566094020740074
+MonoBehaviour:
+  m_GameObject: {fileID: 1325758100427389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66c516b86ac3014d9437d7d1f962728, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1782640024396877
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224851286035251734}
+  - component: {fileID: 223415218316504187}
+  - component: {fileID: 114215858091283030}
+  - component: {fileID: 114052248137787944}
+  - component: {fileID: 114628591091440342}
+  - component: {fileID: 114057277065548681}
+  - component: {fileID: 114231449791945263}
+  m_Layer: 8
+  m_Name: PlayerNameCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224851286035251734
+RectTransform:
+  m_GameObject: {fileID: 1782640024396877}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 224726749921055011}
+  - {fileID: 224037746344994407}
+  - {fileID: 224108049030000184}
+  m_Father: {fileID: 4146608703704065}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!223 &223415218316504187
+Canvas:
+  m_GameObject: {fileID: 1782640024396877}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 1
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 1
+  m_TargetDisplay: 0
+--- !u!114 &114215858091283030
+MonoBehaviour:
+  m_GameObject: {fileID: 1782640024396877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b3e4c0b40262344bbe8ef70533c53c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  LocalPlayerContainer: {fileID: 224108049030000184}
+  RemotePlayersContainer: {fileID: 224726749921055011}
+  FriendPlayersContainer: {fileID: 224037746344994407}
+--- !u!114 &114052248137787944
+MonoBehaviour:
+  m_GameObject: {fileID: 1782640024396877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0d34c65dc27f8409052b24c70ed357, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 640, y: 1136}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 1
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  ScaleModifierSmallDevice: 1
+  ScaleModifierLargeDevice: 0.7
+  AccessibilityMultiplier: 1.5
+--- !u!114 &114628591091440342
+MonoBehaviour:
+  m_GameObject: {fileID: 1782640024396877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fd57349bd285545af02baf3ca0c6b7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  PlayerNameController: {fileID: 114215858091283030}
+--- !u!114 &114057277065548681
+MonoBehaviour:
+  m_GameObject: {fileID: 1782640024396877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a02dc48dc56f6f74995bc9932be88bb7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114231449791945263
+MonoBehaviour:
+  m_GameObject: {fileID: 1782640024396877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6335e45e7d0af142a4a558655595f5d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  runtimeSettings:
+  - SettingsType: 1
+    ReferenceResolutionX: 640
+    ReferenceResolutionY: 1136
+    ScaleModifierSmallDevice: 1
+    ScaleModifierLargeDevice: 0.7
+  - SettingsType: 2
+    ReferenceResolutionX: 1920
+    ReferenceResolutionY: 1080
+    ScaleModifierSmallDevice: 0.8
+    ScaleModifierLargeDevice: 0.8
+--- !u!1 &1641310791368904
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224726749921055011}
+  m_Layer: 8
+  m_Name: RemotePlayers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224726749921055011
+RectTransform:
+  m_GameObject: {fileID: 1641310791368904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224851286035251734}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1125826622412120
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224037746344994407}
+  m_Layer: 8
+  m_Name: FriendPlayers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224037746344994407
+RectTransform:
+  m_GameObject: {fileID: 1125826622412120}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224851286035251734}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1939355011324680
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224108049030000184}
+  m_Layer: 8
+  m_Name: LocalPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224108049030000184
+RectTransform:
+  m_GameObject: {fileID: 1939355011324680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224851286035251734}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}

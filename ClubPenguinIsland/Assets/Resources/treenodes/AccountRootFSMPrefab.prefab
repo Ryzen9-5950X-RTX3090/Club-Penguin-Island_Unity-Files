@@ -1,0 +1,469 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1160963464851685}
+  m_IsPrefabParent: 1
+--- !u!1 &1160963464851685
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224083430824854028}
+  - component: {fileID: 114785974625705515}
+  - component: {fileID: 114981267454163828}
+  - component: {fileID: 114011916652141248}
+  - component: {fileID: 114329976904816100}
+  - component: {fileID: 114659293350584532}
+  - component: {fileID: 114252863115750352}
+  - component: {fileID: 114801918569484019}
+  - component: {fileID: 114025460731520424}
+  - component: {fileID: 114024755829544393}
+  - component: {fileID: 114416777254402794}
+  - component: {fileID: 114855695000938508}
+  - component: {fileID: 114878407264682049}
+  - component: {fileID: 114328651650700136}
+  - component: {fileID: 114584135109634645}
+  - component: {fileID: 114296006513893185}
+  - component: {fileID: 114820742105031303}
+  - component: {fileID: 114586846216261484}
+  - component: {fileID: 114101550072781229}
+  - component: {fileID: 114535140489238467}
+  - component: {fileID: 114259430055440523}
+  - component: {fileID: 114431638753648251}
+  - component: {fileID: 114916115123216787}
+  - component: {fileID: 114252992066801147}
+  - component: {fileID: 114226352299162036}
+  - component: {fileID: 114227513452897088}
+  - component: {fileID: 114288726353286927}
+  - component: {fileID: 114387715971528661}
+  - component: {fileID: 114858487168863116}
+  - component: {fileID: 114562601493181029}
+  - component: {fileID: 114524861614536392}
+  - component: {fileID: 114067202205627228}
+  - component: {fileID: 114085499871875571}
+  - component: {fileID: 114148796061600447}
+  m_Layer: 5
+  m_Name: AccountRootFSMPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224083430824854028
+RectTransform:
+  m_GameObject: {fileID: 1160963464851685}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &114785974625705515
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1c16acc4ad1c14bbad281ef81a033d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Bindings:
+  - Name: AccountRootFSM
+    Definition: {fileID: 11400000, guid: 61b0d3480e7e66d499e7b181738788ba, type: 2}
+  - Name: OneIdLoader
+    Definition: {fileID: 11400000, guid: 1ffbbf89548e24d4f8d4372d4ed85db0, type: 2}
+  - Name: OneIdFullscreenLoader
+    Definition: {fileID: 11400000, guid: 1ffbbf89548e24d4f8d4372d4ed85db0, type: 2}
+  - Name: MembershipLoader
+    Definition: {fileID: 11400000, guid: 1ffbbf89548e24d4f8d4372d4ed85db0, type: 2}
+  ABTest:
+    Binding: AccountRootFSM
+    Attribute: StateMachineDefinitionName
+    Definitions:
+    - {fileID: 11400000, guid: 61b0d3480e7e66d499e7b181738788ba, type: 2}
+    - {fileID: 11400000, guid: 5c1294d3a625c8947b39b6561fc009e4, type: 2}
+--- !u!114 &114981267454163828
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c60ac9440474bda4e9b380c34a3f077d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  runtimeSettings:
+  - SettingsType: 2
+    BindingOverrides:
+    - Name: OneIdLoader
+      Definition: {fileID: 11400000, guid: cdace1329fde15a42813862025957e80, type: 2}
+    - Name: OneIdFullscreenLoader
+      Definition: {fileID: 11400000, guid: cdace1329fde15a42813862025957e80, type: 2}
+    - Name: MembershipLoader
+      Definition: {fileID: 11400000, guid: cdace1329fde15a42813862025957e80, type: 2}
+--- !u!114 &114011916652141248
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60933642b6d5b4a49bf1bff3d8e343c3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114329976904816100
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f28fce345b365ad4599da30b48ca2c5a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  FSMName: AccountRootFSM
+--- !u!114 &114659293350584532
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13015a4fe0a2b30458d9e1b6156dc617, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  MissingInfoEvent: oneidprofileupdate
+  LegalUpdateEvent: oneidlegalupdate
+  LoginSuccessEvent: loginsuccess
+  ParentalConsentRequiredEvent: parentalconsentrequired
+--- !u!114 &114252863115750352
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac526c5131f5c9438b6fdf3ee0dafd9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  CreateSuccessEvent: createsuccess
+  LocalPlayerLoadedEvent: playerloaded
+  UpdateDisplayNameSuccessEvent: displaynameupdatesuccess
+  UpdateProfileSuccessEvent: profileupdatesuccess
+  LegalUpdateEvent: oneidlegalupdate
+  ProfileUpdateEvent: oneidprofileupdate
+--- !u!114 &114801918569484019
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177110a5d4f9ecb4181f7cc195624659, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: CPRemixProfileCheck
+  FirstTimePlayerEvent: startftue
+  ReturnPlayerEvent: checkdisplayname
+--- !u!114 &114025460731520424
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68688a80d67adfb4baedc331e340cdcd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: CPRemixMembershipCheck
+  HasMembershipEvent: endflow
+  NoMembershipEvent: loadmembershipoffer
+  ExpiredMembershipEvent: loadmembershipexpired
+--- !u!114 &114024755829544393
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a2658fcaf77a5f4ebf5e4d033a862be, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: StartGame
+--- !u!114 &114416777254402794
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0777a9fa20bc8f54f81cecb848c2ab9e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: OneIdDisplayNameCheck
+  RejectedEvent: displaynameupdateneeded
+  AcceptedPendingEvent: validdisplayname
+--- !u!114 &114855695000938508
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fdb175d41a4104996fcddc91771eff, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: ClosePopup
+--- !u!114 &114878407264682049
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03002c4bb655ca640bfdbca40bf5531e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: OneIdLoginCheck
+  LoggedInEvent: loggedin
+  MigrationNeededEvent: migrationneeded
+  NotLoggedInEvent: loggedout
+--- !u!114 &114328651650700136
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7ef179c0a9b9464fbdeded795b5777d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: Logout
+--- !u!114 &114584135109634645
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98caf75764c9b24682d4d8decf13923, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: FTUE
+--- !u!114 &114296006513893185
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ddd4c8a33efed49ae7dc8e66462e14, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  MembershipPromptPrefabContentKey:
+    Key: Prefabs/Membership
+    type: UnityEngine.GameObject, UnityEngine
+  offerContinueEvent: offercontinue
+  loginEvent: login
+  termsContinueEvent: termscontinue
+  thanksContinueEvent: closepopup
+  backToStartEvent: restart
+  firstTimeSKU: First_Time_User_Offer
+  reSubscribingSKU: 1_Month_No_Trial
+  accountFlowData:
+    _scopeID:
+    LoginViaMembership: 0
+    LoginViaRestore: 0
+    SkipMembership: 0
+    SkipWelcome: 0
+    PreValidatedDisplayNames: []
+    PreValidatedUserNames: []
+    FlowType: 0
+    Referrer:
+--- !u!114 &114820742105031303
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c467181420c5024093c351a7d2b66ae, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: EndFlow
+  NormalLoginExitEvent: startgame
+  StartFTUEExitEvent: startftue
+  ContinueFTUEExitEvent: continueftue
+  InGameExitEvent: closepopup
+  NotLoggedInExitEvent: closepopup
+  ParentalConsentRequiredEvent: parentalconsentrequired
+--- !u!114 &114586846216261484
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5414c3eb0e861a348aef11c18a5c1662, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: ContinueFTUE
+--- !u!114 &114101550072781229
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7352e59bd9dcbe4db84b560fe1ab8e4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: CPRemixShowMembershipCheck
+  ShowMembershipEvent: showmembership
+  SkipMembershipEvent: skipmembership
+  EndMembershipFlowEvent: endmembershipflow
+  ShowAllAccessEvent: showallaccess
+  ShowAllAccessOverEvent: showallaccessover
+--- !u!114 &114535140489238467
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc55742c357837044a35fb9ab51b87e7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: FTUEBypassCheck
+  ShowFTUEEvent: startftue
+  SkipFTUEEvent: create
+--- !u!114 &114259430055440523
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ad63bdb76bbe244a84893073e040ab, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: CPRemixWelcomeCheck
+  ShowWelcomeEvent: showwelcome
+  SkipWelcomeEvent: skipwelcome
+--- !u!114 &114431638753648251
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b08cce63e60734f93a7c1487f90368, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: CPRemixMigrationCheck
+  ContinueEvent: continue
+--- !u!114 &114916115123216787
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68eeab756a3eb5646a6ec0eafae0d680, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: ClaimableRewardCheck
+  ContinueEvent: continue
+--- !u!114 &114252992066801147
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd17f02f78178b4d9ce2087a3abb7b3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: AdventureReminderTutorial
+  ContinueEvent: continue
+--- !u!114 &114226352299162036
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9d82081c8414e040bc4837b7311f31e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: LoginZone
+  ContinueEvent: continue
+--- !u!114 &114227513452897088
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526ab5d5becf96a42abf7e365454e941, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: BackButton
+  LastStateEvent: endflow
+  IgnoreStates:
+  - background
+  - check
+  - precreatewelcome
+--- !u!114 &114288726353286927
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31e0fd1b002f5a44b655efe0821f646, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: OneIdDisplayNameUpdate
+--- !u!114 &114387715971528661
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad511d34726162048acc3a75d51651d4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: CPRemixRememberAccountsCheck
+  LoginAccountEvent: login
+  SingleAccountEvent: singleaccount
+  MultipleAccountEvent: multipleaccounts
+  SoftLoginEvent: softlogin
+--- !u!114 &114858487168863116
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00e81b4a6ca8c4f47a4035528e3f53a9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: MembershipAllAccessReward
+  RewardPopupCompleteEvent: rewardpopupcomplete
+  TitleToken: Membership.AllAccess.RewardTitle
+  AllAccessRewardScreenKey:
+    Key: Rewards/RewardPopupScreens/RewardPopup_AllAccess_IceKeyItem
+    type: UnityEngine.GameObject, UnityEngine
+--- !u!114 &114562601493181029
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d443367b56bb8e44a7fa36453dec58e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: CarrierBillingCheck
+  SupportedEvent: supported
+  NotSupportedEvent: notsupported
+--- !u!114 &114524861614536392
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910ce8c8132b9a64e8d8db2e6adeebb1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: CPRemixServerAddedCheck
+  ContinueEvent: continue
+  FriendshipPromptPrefabContentKey:
+    Key: Prefabs/FriendReferralPrompt
+    type: UnityEngine.GameObject, UnityEngine
+--- !u!114 &114067202205627228
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d72da7374f3c034faca769d7e13376e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  runtimeSettings:
+  - SettingsType: 2
+    LastStateEvent:
+--- !u!114 &114085499871875571
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ec8d832c9d9bd4396f58975d2fdecf, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: RememberMeSingleSoftLogin
+  SoftLoginFailEvent: softloginfail
+--- !u!114 &114148796061600447
+MonoBehaviour:
+  m_GameObject: {fileID: 1160963464851685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1073ffb6adcb60b44b9515ddc460a3c2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  HandledState: SilentClosePopup

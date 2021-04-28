@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1347995386624254}
+  m_IsPrefabParent: 1
+--- !u!1 &1347995386624254
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4311298997172783}
+  - component: {fileID: 135934412192447948}
+  - component: {fileID: 114440177735315375}
+  - component: {fileID: 114037307974476426}
+  - component: {fileID: 114887989215480886}
+  - component: {fileID: 114000157849210222}
+  - component: {fileID: 114764128109252334}
+  - component: {fileID: 114599652279579416}
+  - component: {fileID: 114697125973168263}
+  - component: {fileID: 114640697976859958}
+  - component: {fileID: 114955801086567458}
+  - component: {fileID: 114316925808616271}
+  - component: {fileID: 114748719342037529}
+  m_Layer: 26
+  m_Name: FindFourGroupExperience
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4311298997172783
+Transform:
+  m_GameObject: {fileID: 1347995386624254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &135934412192447948
+SphereCollider:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.9
+  m_Center: {x: 0, y: 0.47, z: 0}
+--- !u!114 &114440177735315375
+MonoBehaviour:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e4ad8528c1c03449b0234cb40afb5b0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  InstanceId:
+  OwnerId: 0
+  IsOwnerLocalPlayer: 0
+  PropDef: {fileID: 0}
+  DestroyAfterSec: -1
+--- !u!114 &114037307974476426
+MonoBehaviour:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658ccee435aef5f449595d0561395ccf, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  IndicatorItemImageContentKey:
+    Key: Images/PartyGames_Icon_DF_AA
+    type: UnityEngine.Sprite, UnityEngine
+  ItemTargetBoneName: r_wrist_jnt
+  ItemContentKey:
+    Key: Props/PartyGames/FindFour/FindFourGroup
+    type: UnityEngine.GameObject, UnityEngine
+  OfferAnimIndex: 1
+  ControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartyGames/FindFour/FindFourGroupButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  SwimControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartyGames/FindFour/FindFourGroupSwimButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  SitControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartyGames/FindFour/FindFourGroupSitButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  SitSwimControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartyGames/FindFour/FindFourGroupSitSwimButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  DivingControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartyGames/FindFour/FindFourGroupSwimButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  IndicatorContentKey:
+    Key: ToyboxPrefabs/PartySuppliesShareablePopupPrefab
+    type: UnityEngine.GameObject, UnityEngine
+  AdditionalItemTakingCoolDown: 1
+  AdditionalItemTakingCoolDownTimeInSecs: 15
+  i18nConfirmationTitleText: Discard?
+  i18nConfirmationBodyText: This item can't be used again.
+  CustomCamera: {fileID: 0}
+--- !u!114 &114887989215480886
+MonoBehaviour:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 798d3fa6fbfd2b642b061b1c15fb9a15, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: GetPointToTargetAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 3
+  ParentId: -1
+  ParentIdOnFalse: 8
+  InterruptedBy: -1
+  Destination: {fileID: 4311298997172783}
+  Offset: 0.75
+--- !u!114 &114000157849210222
+MonoBehaviour:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705267ab156af0043a8fa612db587e21, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: LocomoteToAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 1
+  ParentId: 3
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  Waypoints: []
+  Style: 1
+  DistanceThreshold: 0.15
+  AngleThreshold: 1
+  UseShortestPath: 0
+  SnapRotAtEnd: 0
+  DontSnapYPosAtEnd: 0
+--- !u!114 &114764128109252334
+MonoBehaviour:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c043f00757866e84fa1de8769fe4499b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: GetDirectionAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 4
+  ParentId: 1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  Direction: {fileID: 0}
+  To: {fileID: 4311298997172783}
+--- !u!114 &114599652279579416
+MonoBehaviour:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e3c8e442e189d48a71c88f756fde19, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114697125973168263
+MonoBehaviour:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98f9b245737d894f95e00014611e5aa, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: SetRotationAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 5
+  ParentId: 4
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  TargetRotation: {fileID: 0}
+  Loop: 0
+  SetHeadingOnExit: 0
+  BroadcastOnExit: 0
+--- !u!114 &114640697976859958
+MonoBehaviour:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21d11f6ab9dd474aa90c826b625d820, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: FilterTriggerAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 7
+  ParentId: -1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  OwnerTag:
+  TriggerEveryFrame: 1
+  ExcludeIfSitting: 0
+  ExcludeIfSwimming: 0
+  ExcludeIfInAir: 0
+--- !u!114 &114955801086567458
+MonoBehaviour:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b8ada14a7068489c8873182184d42, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: IfLocomotionAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 8
+  ParentId: -1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  Sitting: 1
+  Tubing: 1
+  Swimming: 1
+  Running: 0
+--- !u!114 &114316925808616271
+MonoBehaviour:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561d66c4179284f46af75f2cd0cbedab, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  switchPresetData:
+    _sourcePreset:
+    _targetPreset:
+  globalParameterData:
+    _name:
+    _value: 0
+  globalSwitchParameterData:
+    _name:
+    _switch:
+  transitionToSnapshotData:
+    _snapshot:
+    _timeToReach: 0
+  _eventName: SFX/AO/MarbleHunt/BoxOpen
+  _eventAction: 0
+  _eventTriggerOnEnter: 0
+  _triggerEnterTag:
+  _trigger: 0
+  _eventValue:
+  _eventParameter: 1
+  _eventScheduleParameter: 0
+  _eventParameterName:
+  _delay: 0
+  _probability: 100
+  _eventTriggerType: 0
+  _ignoreGameObject: 0
+  _overrideParentGameObject: 0
+  _addToQueue: 0
+  _min: 0
+  _max: 1
+  _dspType: 0
+  _timeToTarget: 0
+  _curve: 0.5
+  _parentGameObject: {fileID: 1347995386624254}
+  _useEventID: 0
+  _postCountMax: 0
+--- !u!114 &114748719342037529
+MonoBehaviour:
+  m_GameObject: {fileID: 1347995386624254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9187306e8e505db4c92ed73f08143eb3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Offset: 1.55

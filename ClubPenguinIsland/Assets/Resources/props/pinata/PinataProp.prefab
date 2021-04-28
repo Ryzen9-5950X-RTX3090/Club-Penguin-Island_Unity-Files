@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1306548630435824}
+  m_IsPrefabParent: 1
+--- !u!1 &1306548630435824
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4688561729739022}
+  - component: {fileID: 33748809759924534}
+  - component: {fileID: 23191010747836675}
+  - component: {fileID: 114385424468966458}
+  - component: {fileID: 114126693425314487}
+  - component: {fileID: 114100344800858166}
+  - component: {fileID: 114677979895218860}
+  - component: {fileID: 114997225666185286}
+  - component: {fileID: 114311723786376043}
+  - component: {fileID: 114923363983791800}
+  m_Layer: 0
+  m_Name: PinataProp
+  m_TagString: Pinata
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4688561729739022
+Transform:
+  m_GameObject: {fileID: 1306548630435824}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33748809759924534
+MeshFilter:
+  m_GameObject: {fileID: 1306548630435824}
+  m_Mesh: {fileID: 4300000, guid: 79954e36e2a46ae40ac5a03631a8ba4a, type: 2}
+--- !u!23 &23191010747836675
+MeshRenderer:
+  m_GameObject: {fileID: 1306548630435824}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f243dc85549b85941806d6178afd24fa, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &114385424468966458
+MonoBehaviour:
+  m_GameObject: {fileID: 1306548630435824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395d9412b88a2b74eb852ddb603752d3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  UseOnceImmediately: 0
+  StoreAfterUse: 0
+  PlayIdleAnimAfterUse: 1
+  VisualTreatment: 0
+  PulsateInteractButton: 1
+  TargetBoneName: r_wrist_jnt
+  MaxDistanceFromUser: 0.75
+  CheckCollisions: 0
+  AnimOverrideController: {fileID: 22100000, guid: 1b15a8addfb00644799dae2712bfde40, type: 2}
+  AnimReplacementController: {fileID: 0}
+  IgnoreHoldAnimationComplete: 0
+  IgnoreStoreAnimationComplete: 0
+  CustomCamera: {fileID: 0}
+  RetrieveEaseType: 23
+  EaseTimeRetrieve: 1
+  StoreEaseType: 20
+  EaseTimeStore: 1
+  OnUseDestination: {x: 0, y: 0, z: 0}
+  PropUserRef: {fileID: 0}
+  UpdateUser: 1
+  ExperienceInstanceId:
+  OwnerId: 0
+  PropId:
+  IsOwnerLocalPlayer: 0
+  PropDef: {fileID: 0}
+  IsUseCompleted: 0
+--- !u!114 &114126693425314487
+MonoBehaviour:
+  m_GameObject: {fileID: 1306548630435824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0e7974833775845bc04f499a1b2793, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  PrefabToSpawn: {fileID: 114811660042408755, guid: ccc747edf851c3d49967b7fb57f15fb2, type: 2}
+  IsInstance: 0
+  HideInitially: 1
+  ParentToUser: 0
+  ApplyUserForwardVect: 1
+--- !u!114 &114100344800858166
+MonoBehaviour:
+  m_GameObject: {fileID: 1306548630435824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba87a4b38676b8449e0efc007e693f0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ShowConfirmationPopup: 0
+  WatchActionEventCancel: 1
+  i18nConfirmationTitleText:
+  i18nConfirmationBodyText:
+  ImageOverride: {fileID: 0}
+  RestoreTouchPadControlsOnCancel: 0
+--- !u!114 &114677979895218860
+MonoBehaviour:
+  m_GameObject: {fileID: 1306548630435824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c356f45afc60704eb55d48ed0d73eaf, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114997225666185286
+MonoBehaviour:
+  m_GameObject: {fileID: 1306548630435824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713df338f5997a44fb7ec0d4b59cbaa5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114311723786376043
+MonoBehaviour:
+  m_GameObject: {fileID: 1306548630435824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c553f0769b74a66429283d30443b47ba, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  IKModifiers:
+  - BoneName: backbone_jnt
+    IdleZRot: -30
+    SwimMoveZRot: -45
+    DiveMoveZRot: -20
+  - BoneName: neck_jnt
+    IdleZRot: -20
+    SwimMoveZRot: -40
+    DiveMoveZRot: -30
+--- !u!114 &114923363983791800
+MonoBehaviour:
+  m_GameObject: {fileID: 1306548630435824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e28968e891abe344b6a26f7b56844d5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  SwimControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartySupplies/Pinata/PinataSwimButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  DivingControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartySupplies/Pinata/PinataDivingButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  ControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartySupplies/Pinata/PinataButtonGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  TubeControlsScreenDefinitionContentKey:
+    Key:
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  SitControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartySupplies/Pinata/PinataButtonSitGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+  SitSwimControlsScreenDefinitionContentKey:
+    Key: Definitions/ControlsScreen/PartySupplies/Pinata/PinataButtonSitSwimGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game

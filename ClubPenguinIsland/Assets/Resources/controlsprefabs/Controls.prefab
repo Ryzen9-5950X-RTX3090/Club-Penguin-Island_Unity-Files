@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1488309895820032}
+  m_IsPrefabParent: 1
+--- !u!1 &1488309895820032
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224904751966133941}
+  - component: {fileID: 222941693054783555}
+  - component: {fileID: 95835651246691897}
+  - component: {fileID: 225883610918755385}
+  - component: {fileID: 114402494292366812}
+  m_Layer: 5
+  m_Name: Controls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224904751966133941
+RectTransform:
+  m_GameObject: {fileID: 1488309895820032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224671730653970119}
+  - {fileID: 224798753943193806}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: -21}
+  m_SizeDelta: {x: 0, y: 450}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!222 &222941693054783555
+CanvasRenderer:
+  m_GameObject: {fileID: 1488309895820032}
+--- !u!95 &95835651246691897
+Animator:
+  serializedVersion: 3
+  m_GameObject: {fileID: 1488309895820032}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0bbba57ec8060874594fef6bd44f2993, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage:
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!225 &225883610918755385
+CanvasGroup:
+  m_GameObject: {fileID: 1488309895820032}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &114402494292366812
+MonoBehaviour:
+  m_GameObject: {fileID: 1488309895820032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd06c9f9557cadb4686bf7c4585e57b1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  LeftContainer: {fileID: 224671730653970119}
+  RightContainer: {fileID: 224798753943193806}
+  InputButtonsContentKey:
+    Key: Definitions/ControlsScreen/Locomotion/LocomotionGroupDefinition
+    type: ClubPenguin.UI.InputButtonGroupDefinition, ReMix-Game
+--- !u!1 &1391443628126095
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224671730653970119}
+  - component: {fileID: 222252615087566255}
+  - component: {fileID: 225553007296638279}
+  m_Layer: 5
+  m_Name: LeftPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224671730653970119
+RectTransform:
+  m_GameObject: {fileID: 1391443628126095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 173.6, y: 185.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224904751966133941}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.05377778}
+  m_AnchorMax: {x: 0, y: 0.7722223}
+  m_AnchoredPosition: {x: 173.6, y: 0}
+  m_SizeDelta: {x: 275.9, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &222252615087566255
+CanvasRenderer:
+  m_GameObject: {fileID: 1391443628126095}
+--- !u!225 &225553007296638279
+CanvasGroup:
+  m_GameObject: {fileID: 1391443628126095}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!1 &1135724867623340
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224798753943193806}
+  - component: {fileID: 222916103352853035}
+  - component: {fileID: 225898567292339546}
+  - component: {fileID: 114112943380250441}
+  m_Layer: 5
+  m_Name: RightPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224798753943193806
+RectTransform:
+  m_GameObject: {fileID: 1135724867623340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 177.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224904751966133941}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.03333333}
+  m_AnchorMax: {x: 1, y: 0.7544444}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 281, y: 0}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!222 &222916103352853035
+CanvasRenderer:
+  m_GameObject: {fileID: 1135724867623340}
+--- !u!225 &225898567292339546
+CanvasGroup:
+  m_GameObject: {fileID: 1135724867623340}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &114112943380250441
+MonoBehaviour:
+  m_GameObject: {fileID: 1135724867623340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a448aef3a763ed44db2afdea5caa5dc8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  runtimeSettings:
+  - SettingsType: 2
+    AnchorMinXOption: 0
+    AnchorMinYOption: 0
+    AnchorMaxXOption: 0
+    AnchorMaxYOption: 0
+    SizeDeltaXOption: 1
+    SizeDeltaYOption: 0
+    PositionZOption: 0
+    AnchorMin: {x: 0, y: 0}
+    AnchorMax: {x: 0, y: 0}
+    SizeDelta: {x: 350, y: 0}
+    PositionZ: 0

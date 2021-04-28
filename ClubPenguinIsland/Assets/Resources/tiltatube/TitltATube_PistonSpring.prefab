@@ -1,0 +1,284 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1497910876267477}
+  m_IsPrefabParent: 1
+--- !u!1 &1497910876267477
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4740118382972542}
+  - component: {fileID: 95822570794173698}
+  m_Layer: 0
+  m_Name: TitltATube_PistonSpring
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4740118382972542
+Transform:
+  m_GameObject: {fileID: 1497910876267477}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4286275090785576}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95822570794173698
+Animator:
+  serializedVersion: 3
+  m_GameObject: {fileID: 1497910876267477}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e539a0aef7f298743bafe71abc24c6ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage:
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &1788655598123708
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4286275090785576}
+  - component: {fileID: 135089271040941696}
+  - component: {fileID: 114478406714908004}
+  - component: {fileID: 114815179149556049}
+  - component: {fileID: 114143324929242825}
+  - component: {fileID: 114284957710811365}
+  - component: {fileID: 114986144467055205}
+  - component: {fileID: 114650762651298402}
+  - component: {fileID: 114681331814437112}
+  - component: {fileID: 114738114149128834}
+  m_Layer: 26
+  m_Name: Spring
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4286275090785576
+Transform:
+  m_GameObject: {fileID: 1788655598123708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4002088699755464}
+  m_Father: {fileID: 4740118382972542}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &135089271040941696
+SphereCollider:
+  m_GameObject: {fileID: 1788655598123708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114478406714908004
+MonoBehaviour:
+  m_GameObject: {fileID: 1788655598123708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3944ad77c29ac3443bf7310efa22420b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isMemberOnly: 1
+  QuestNameExclusions: []
+  QuestObjectiveExclusions: []
+--- !u!114 &114815179149556049
+MonoBehaviour:
+  m_GameObject: {fileID: 1788655598123708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b59a5ebb9455d02409174dca97b92cad, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: Impulse on Penguin
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 1
+  ParentId: -1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  StartTransform: {fileID: 0}
+  DirectionY: {fileID: 0}
+  DirectionZ: {fileID: 4002088699755464}
+  DirectionTo: {fileID: 0}
+  Direction: {x: 0, y: 0, z: 0}
+  Magnitude: 10
+  AddDirection: {x: 0, y: 0, z: 0}
+  AddMagnitude: 0
+  SetRunLocomotion: 1
+  PreserveTubing: 1
+--- !u!114 &114143324929242825
+MonoBehaviour:
+  m_GameObject: {fileID: 1788655598123708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efbe6e9bb678af14e85b79f4f80396a3, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: Play Spring Launch Anim
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 4
+  ParentId: 1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  StateName: Base Layer.Interactions.GeyserLaunch
+  LayerIndex: 0
+  Duration: 0
+  NormStartTime: 0
+  AnimateTranslation: 0
+  AnimateRotation: 0
+  IgnoreCollisions: 0
+  MakeAnimRelative: 0
+  IdealStartTransform: {fileID: 0}
+  WarpStartTime: 0
+  WarpEndTime: 0
+--- !u!114 &114284957710811365
+MonoBehaviour:
+  m_GameObject: {fileID: 1788655598123708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49012b5031d7c94392572e948ff9f94, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: LogAnalyticsGameActionAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 10
+  ParentId: -1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  Context: mainUI
+  Action: special_action
+  Type: spring
+  Message:
+  Location:
+  IsSingular: 0
+  SingularID:
+--- !u!114 &114986144467055205
+MonoBehaviour:
+  m_GameObject: {fileID: 1788655598123708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6c58258db13f1449e0755456b06717, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: DisallowLocomotionControllerAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 11
+  ParentId: -1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  RunDelay: 0
+  SwimDelay: 0.25
+  SlideDelay: 0
+  SitDelay: 0
+--- !u!114 &114650762651298402
+MonoBehaviour:
+  m_GameObject: {fileID: 1788655598123708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2a2d941c259814f89c4cbc392c1fe7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: StayOnTubeAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 12
+  ParentId: -1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+--- !u!114 &114681331814437112
+MonoBehaviour:
+  m_GameObject: {fileID: 1788655598123708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b49bc4a0630f140a866b5a6bcfe37c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: SendFabricEventAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 14
+  ParentId: 1
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+  EventName: SFX/Player/FlyWhiz
+  EventAction: 0
+--- !u!114 &114738114149128834
+MonoBehaviour:
+  m_GameObject: {fileID: 1788655598123708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c2983ded5eec6469c2b26b7b561d5c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Name: WaitForPenguinOutOfAirAction
+  EndAllOnExit: 0
+  AbortOnUserInput: 0
+  Target: 0
+  CustomTarget: {fileID: 0}
+  Owner: {fileID: 0}
+  Id: 15
+  ParentId: 4
+  ParentIdOnFalse: -1
+  InterruptedBy: -1
+--- !u!1 &1419821503009496
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4002088699755464}
+  m_Layer: 0
+  m_Name: LaunchDir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4002088699755464
+Transform:
+  m_GameObject: {fileID: 1419821503009496}
+  m_LocalRotation: {x: -0.5735764, y: 0, z: 0, w: 0.8191521}
+  m_LocalPosition: {x: -3.892928E-07, y: 0.5499999, z: -2.607703E-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4286275090785576}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -69.99999, y: 0, z: 0}

@@ -1,0 +1,367 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1243385056511454}
+  m_IsPrefabParent: 1
+--- !u!1 &1243385056511454
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4706198531374859}
+  - component: {fileID: 114458901619102462}
+  - component: {fileID: 114306028210093092}
+  m_Layer: 0
+  m_Name: FishdogGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4706198531374859
+Transform:
+  m_GameObject: {fileID: 1243385056511454}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4809878075548356}
+  - {fileID: 4036001252740217}
+  - {fileID: 4193597167726472}
+  - {fileID: 4110918471220809}
+  - {fileID: 4742178081487745}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114458901619102462
+MonoBehaviour:
+  m_GameObject: {fileID: 1243385056511454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6e5f18ec13cee248add5e7317a1a339, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  ItemPieces:
+  - {fileID: 1168489546126126}
+  - {fileID: 1765960063037686}
+  - {fileID: 1674964718570190}
+  - {fileID: 1587312087604603}
+  TotalPieces: 5
+--- !u!114 &114306028210093092
+MonoBehaviour:
+  m_GameObject: {fileID: 1243385056511454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c553f0769b74a66429283d30443b47ba, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  IKModifiers:
+  - BoneName: backbone_jnt
+    IdleZRot: -40
+    SwimMoveZRot: -50
+    DiveMoveZRot: -20
+  - BoneName: neck_jnt
+    IdleZRot: -10
+    SwimMoveZRot: -25
+    DiveMoveZRot: -25
+--- !u!1 &1795748406665286
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4809878075548356}
+  - component: {fileID: 33161240185081039}
+  - component: {fileID: 23568251720428317}
+  m_Layer: 0
+  m_Name: fishDogTray
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4809878075548356
+Transform:
+  m_GameObject: {fileID: 1795748406665286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4706198531374859}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33161240185081039
+MeshFilter:
+  m_GameObject: {fileID: 1795748406665286}
+  m_Mesh: {fileID: 4300000, guid: da9a914876178f64bb9c13590028378f, type: 2}
+--- !u!23 &23568251720428317
+MeshRenderer:
+  m_GameObject: {fileID: 1795748406665286}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b91b26f40f43e9d44929bbea616ca68e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1168489546126126
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4036001252740217}
+  - component: {fileID: 33661861502869174}
+  - component: {fileID: 23234141391032372}
+  m_Layer: 0
+  m_Name: fishDog1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4036001252740217
+Transform:
+  m_GameObject: {fileID: 1168489546126126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4706198531374859}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33661861502869174
+MeshFilter:
+  m_GameObject: {fileID: 1168489546126126}
+  m_Mesh: {fileID: 4300000, guid: 3550749b686abc34fbfd4216ea3ff0ef, type: 2}
+--- !u!23 &23234141391032372
+MeshRenderer:
+  m_GameObject: {fileID: 1168489546126126}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b91b26f40f43e9d44929bbea616ca68e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1765960063037686
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4193597167726472}
+  - component: {fileID: 33776819121989590}
+  - component: {fileID: 23446962400062334}
+  m_Layer: 0
+  m_Name: fishDog2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4193597167726472
+Transform:
+  m_GameObject: {fileID: 1765960063037686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4706198531374859}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33776819121989590
+MeshFilter:
+  m_GameObject: {fileID: 1765960063037686}
+  m_Mesh: {fileID: 4300000, guid: c4f63b6f648d836459ca70fabef08a43, type: 2}
+--- !u!23 &23446962400062334
+MeshRenderer:
+  m_GameObject: {fileID: 1765960063037686}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b91b26f40f43e9d44929bbea616ca68e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1674964718570190
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4110918471220809}
+  - component: {fileID: 33615792740371804}
+  - component: {fileID: 23882006776415489}
+  m_Layer: 0
+  m_Name: fishDog3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4110918471220809
+Transform:
+  m_GameObject: {fileID: 1674964718570190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4706198531374859}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33615792740371804
+MeshFilter:
+  m_GameObject: {fileID: 1674964718570190}
+  m_Mesh: {fileID: 4300000, guid: a0a4e79288bdbc94c93e5386e7d85fc3, type: 2}
+--- !u!23 &23882006776415489
+MeshRenderer:
+  m_GameObject: {fileID: 1674964718570190}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b91b26f40f43e9d44929bbea616ca68e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1587312087604603
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4742178081487745}
+  - component: {fileID: 33929196385104411}
+  - component: {fileID: 23471650895182371}
+  m_Layer: 0
+  m_Name: fishDog4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4742178081487745
+Transform:
+  m_GameObject: {fileID: 1587312087604603}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4706198531374859}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33929196385104411
+MeshFilter:
+  m_GameObject: {fileID: 1587312087604603}
+  m_Mesh: {fileID: 4300000, guid: 72d8c8b0af7f23b4f9e0813ec40ff91e, type: 2}
+--- !u!23 &23471650895182371
+MeshRenderer:
+  m_GameObject: {fileID: 1587312087604603}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b91b26f40f43e9d44929bbea616ca68e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
